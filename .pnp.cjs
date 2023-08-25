@@ -35,7 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["deepmerge", "npm:4.3.1"],\
             ["eslint-config-react-app", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:7.0.1"],\
             ["eslint-plugin-primer-react", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.0.1"],\
-            ["gh-pages", "npm:5.0.0"],\
+            ["gh-pages", "npm:6.0.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:18.2.0"],\
             ["react-icons", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.10.1"],\
@@ -7933,6 +7933,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["commander", [\
+        ["npm:11.0.0", {\
+          "packageLocation": "./.yarn/cache/commander-npm-11.0.0-7def992f0c-6621954e1e.zip/node_modules/commander/",\
+          "packageDependencies": [\
+            ["commander", "npm:11.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:2.20.3", {\
           "packageLocation": "./.yarn/cache/commander-npm-2.20.3-d8dcbaa39b-ab8c07884e.zip/node_modules/commander/",\
           "packageDependencies": [\
@@ -11073,13 +11080,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:8.1.0", {\
-          "packageLocation": "./.yarn/cache/fs-extra-npm-8.1.0-197473387f-bf44f0e6ce.zip/node_modules/fs-extra/",\
+        ["npm:11.1.1", {\
+          "packageLocation": "./.yarn/cache/fs-extra-npm-11.1.1-ca44602180-fb883c6824.zip/node_modules/fs-extra/",\
           "packageDependencies": [\
-            ["fs-extra", "npm:8.1.0"],\
+            ["fs-extra", "npm:11.1.1"],\
             ["graceful-fs", "npm:4.2.11"],\
-            ["jsonfile", "npm:4.0.0"],\
-            ["universalify", "npm:0.1.2"]\
+            ["jsonfile", "npm:6.1.0"],\
+            ["universalify", "npm:2.0.0"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -11277,16 +11284,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["gh-pages", [\
-        ["npm:5.0.0", {\
-          "packageLocation": "./.yarn/cache/gh-pages-npm-5.0.0-85e52a94f0-d766aef02d.zip/node_modules/gh-pages/",\
+        ["npm:6.0.0", {\
+          "packageLocation": "./.yarn/cache/gh-pages-npm-6.0.0-2e48eb90f2-031f9070cd.zip/node_modules/gh-pages/",\
           "packageDependencies": [\
-            ["gh-pages", "npm:5.0.0"],\
+            ["gh-pages", "npm:6.0.0"],\
             ["async", "npm:3.2.4"],\
-            ["commander", "npm:2.20.3"],\
+            ["commander", "npm:11.0.0"],\
             ["email-addresses", "npm:5.0.0"],\
             ["filenamify", "npm:4.3.0"],\
             ["find-cache-dir", "npm:3.3.2"],\
-            ["fs-extra", "npm:8.1.0"],\
+            ["fs-extra", "npm:11.1.1"],\
             ["globby", "npm:6.1.0"]\
           ],\
           "linkType": "HARD"\
@@ -13487,14 +13494,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["jsonfile", [\
-        ["npm:4.0.0", {\
-          "packageLocation": "./.yarn/cache/jsonfile-npm-4.0.0-10ce3aea15-6447d6224f.zip/node_modules/jsonfile/",\
-          "packageDependencies": [\
-            ["jsonfile", "npm:4.0.0"],\
-            ["graceful-fs", "npm:4.2.11"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:6.1.0", {\
           "packageLocation": "./.yarn/cache/jsonfile-npm-6.1.0-20a4796cee-7af3b8e1ac.zip/node_modules/jsonfile/",\
           "packageDependencies": [\
@@ -18048,7 +18047,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["deepmerge", "npm:4.3.1"],\
             ["eslint-config-react-app", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:7.0.1"],\
             ["eslint-plugin-primer-react", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.0.1"],\
-            ["gh-pages", "npm:5.0.0"],\
+            ["gh-pages", "npm:6.0.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:18.2.0"],\
             ["react-icons", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:4.10.1"],\
@@ -19908,13 +19907,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["universalify", [\
-        ["npm:0.1.2", {\
-          "packageLocation": "./.yarn/cache/universalify-npm-0.1.2-9b22d31d2d-40cdc60f6e.zip/node_modules/universalify/",\
-          "packageDependencies": [\
-            ["universalify", "npm:0.1.2"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:0.2.0", {\
           "packageLocation": "./.yarn/cache/universalify-npm-0.2.0-9984e61c10-e86134cb12.zip/node_modules/universalify/",\
           "packageDependencies": [\
