@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.f442a1ba.js",
-    "static/js/438.e82a410f.chunk.js": "/static/js/438.e82a410f.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.js": "/static/js/main.30742ed6.js",
+    "static/js/607.dccfae43.chunk.js": "/static/js/607.dccfae43.chunk.js",
+    "static/media/avatar.svg": "/static/media/avatar.e802cdc1761e3eac17d9c7868b218a8f.svg",
+    "static/media/CV_Carlos_Damasio_2023.docx": "/static/media/CV_Carlos_Damasio_2023.d27f951986be946937ea.docx",
+    "static/media/github.svg": "/static/media/github.06cbf6003f0503529f8552f9aa0e6491.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.f442a1ba.js.map": "/static/js/main.f442a1ba.js.map",
-    "438.e82a410f.chunk.js.map": "/static/js/438.e82a410f.chunk.js.map"
+    "main.30742ed6.js.map": "/static/js/main.30742ed6.js.map",
+    "607.dccfae43.chunk.js.map": "/static/js/607.dccfae43.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.f442a1ba.js"
+    "static/js/main.30742ed6.js"
   ]
 }
