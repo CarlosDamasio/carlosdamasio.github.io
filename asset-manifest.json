@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/static/js/main.30742ed6.js",
+    "main.js": "/static/js/main.7e68691e.js",
     "static/js/607.dccfae43.chunk.js": "/static/js/607.dccfae43.chunk.js",
     "static/media/avatar.svg": "/static/media/avatar.e802cdc1761e3eac17d9c7868b218a8f.svg",
     "static/media/CV_Carlos_Damasio_2023.docx": "/static/media/CV_Carlos_Damasio_2023.d27f951986be946937ea.docx",
     "static/media/github.svg": "/static/media/github.06cbf6003f0503529f8552f9aa0e6491.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
     "index.html": "/index.html",
-    "main.30742ed6.js.map": "/static/js/main.30742ed6.js.map",
+    "main.7e68691e.js.map": "/static/js/main.7e68691e.js.map",
     "607.dccfae43.chunk.js.map": "/static/js/607.dccfae43.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.30742ed6.js"
+    "static/js/main.7e68691e.js"
   ]
 }
