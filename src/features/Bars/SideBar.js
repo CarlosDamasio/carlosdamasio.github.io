@@ -3,7 +3,7 @@ import NavItem from '../../components/NavItem'
 
 function SideBar() {
     return (
-        <NavList>
+        <NavList sx={{ ml: 80 }}>
             <NavList.Group title="About">
                 <NavItem to="Myself">
                     Myself
@@ -13,20 +13,25 @@ function SideBar() {
                 </NavItem>
             </NavList.Group>
             <NavList.Group title="Career">
-                <NavItem to="University">
-                    University
-                </NavItem>
-                <NavItem to="Maksen">
-                    Maksen
-                </NavItem>
-                <NavItem to="Novabase">
-                    Novabase
+                <NavItem to="PlayStation">
+                    PlayStation
+                    <NavList.TrailingVisual>2016</NavList.TrailingVisual>
                 </NavItem>
                 <NavItem to="Celfocus">
                     Celfocus
+                    <NavList.TrailingVisual>2015</NavList.TrailingVisual>
                 </NavItem>
-                <NavItem to="PlayStation">
-                    PlayStation
+                <NavItem to="Novabase">
+                    Novabase
+                    <NavList.TrailingVisual>2013</NavList.TrailingVisual>
+                </NavItem>
+                <NavItem to="Maksen">
+                    Maksen
+                    <NavList.TrailingVisual>2011</NavList.TrailingVisual>
+                </NavItem>
+                <NavItem to="University">
+                    University
+                    <NavList.TrailingVisual>2006</NavList.TrailingVisual>
                 </NavItem>
             </NavList.Group>
             <NavList.Group title="Projects">

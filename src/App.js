@@ -1,36 +1,51 @@
-import { BaseStyles, PageLayout } from '@primer/react'
-import GlobalBar from './features/Bars/GlobalBar'
-import SideBar from './features/Bars/SideBar'
-import Myself from './features/about/Myself'
-import MyFavourites from './features/about/MyFavourites'
-import Home from './features/home/Home.js'
-import Projects from './features/projects/Projects'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-
+import { BaseStyles, PageLayout } from "@primer/react";
+import GlobalBar from "./features/bars/GlobalBar";
+import SideBar from "./features/bars/SideBar";
+import Myself from "./features/about/Myself";
+import MyFavourites from "./features/about/MyFavourites";
+import Home from "./features/home/Home";
+import Projects from "./features/projects/Projects";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 function App() {
   return (
     <BaseStyles>
       <Router>
-        <PageLayout containerWidth='full' padding="none" rowGap="none" columnGap="none">
+        <PageLayout
+          containerWidth="full"
+          padding="none"
+          rowGap="none"
+          columnGap="none"
+          sx={{ backgroundColor: "backgroundColor.primary", height: "100vh" }}
+        >
           <PageLayout.Header>
             <GlobalBar />
           </PageLayout.Header>
-          <PageLayout.Pane sx={{ ml: 80, position: 'sticky' }} position="start" aria-label="Secondary navigation" divider="line">
+          <PageLayout.Pane
+            sx={{ position: "sticky" }}
+            position="start"
+            aria-label="Secondary navigation"
+          >
             <SideBar />
           </PageLayout.Pane>
-          <PageLayout.Content sx={{ mr: 110, }}>
+          <PageLayout.Content width="large">
             <Routes>
-              <Route index element={<Home />} />
+              <Route path="/" element={<Navigate to="Home" />} />
+              <Route path="Home" element={<Home />} />
               <Route path="Myself" element={<Myself />} />
               <Route path="MyFavourites" element={<MyFavourites />} />
-              <Route path="Home" element={<Home />} />
               <Route path="Projects" element={<Projects />} />
             </Routes>
           </PageLayout.Content>
+          <PageLayout.Footer></PageLayout.Footer>
         </PageLayout>
       </Router>
-    </BaseStyles >
+    </BaseStyles>
   );
 }
 
