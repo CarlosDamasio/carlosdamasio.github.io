@@ -1,0 +1,63 @@
+.toast-dark {
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Styling for the toast header */
+.toast-dark .toast-header {
+  background-color: #23272b;
+  color: #ffffff;
+  border-bottom: 1px solid #444b50;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 10px;
+}
+
+/* Styling for the toast body */
+.toast-dark .toast-body {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.divider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.divider {
+  border: none;
+  height: 2px; /* Adjust the height of the divider */
+  width: 80%;
+  background: linear-gradient(
+    to right,
+    #555,
+    #888,
+    #555
+  ); /* Gradient for a modern look */
+  position: relative;
+}
+
+.divider::after {
+  content: "";
+  display: block;
+  height: 4px; /* Height of the highlight */
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  ); /* Highlight */
+  position: absolute;
+  top: -1px; /* Adjust based on the divider height */
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}

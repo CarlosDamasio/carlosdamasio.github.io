@@ -1,33 +1,49 @@
 import { theme } from "@primer/react";
-import deepmerge from 'deepmerge'
+import deepmerge from "deepmerge";
 
 const myTheme = deepmerge(theme, {
-    colorSchemes: {
-        light: {
-            colors: {
-                header: {
-                    bg: '#032761',
-                },
-                backgroundColor: {
-                    primary: "#f5faff",
-                    secondary: "#f5faff",
-                    default: "#f5faff"
-                },
-            },
+  colorSchemes: {
+    light: {
+      colors: {
+        header: {
+          bg: "#032761",
         },
-        dark_dimmed: {
-            colors: {
-                header: {
-                    bg: '#011330',
-                },
-                backgroundColor: {
-                    primary: "#262a30",
-                    secondary: "#262a30",
-                    default: "#262a30"
-                },
-            },
+        text: {
+          primary: "#4A4A4A",
+          secondary: "#4A4A4A",
+          default: "#4A4A4A",
         },
+        bg: {
+          primary: "#f8f8ff",
+          secondary: "#4A4A4A",
+          default: "#f5faff",
+        },
+        border: {
+          default: "#4A4A4A",
+        },
+      },
     },
-})
+    dark: {
+      colors: {
+        header: {
+          bg: "#011330",
+        },
+        text: {
+          primary: "#f8f8ff",
+          secondary: "#708090",
+          default: "#f8f8ff",
+        },
+        bg: {
+          primary: "#262a30",
+          secondary: "#434c56",
+          default: "#262a30",
+        },
+        border: {
+          default: "#f8f8ff",
+        },
+      },
+    },
+  },
+});
 
-export default myTheme
+export default myTheme;

@@ -1,9 +1,9 @@
-import { BaseStyles, PageLayout } from "@primer/react";
+import { BaseStyles, Box, PageLayout } from "@primer/react";
 import GlobalBar from "./features/bars/GlobalBar";
 import SideBar from "./features/bars/SideBar";
 import Myself from "./features/about/Myself";
-import MyFavourites from "./features/about/MyFavourites";
 import Home from "./features/home/Home";
+import PlayStation from "./features/career/PlayStation";
 import Projects from "./features/projects/Projects";
 import {
   BrowserRouter as Router,
@@ -19,9 +19,8 @@ function App() {
         <PageLayout
           containerWidth="full"
           padding="none"
-          rowGap="none"
           columnGap="none"
-          sx={{ backgroundColor: "backgroundColor.primary", height: "100vh" }}
+          sx={{ backgroundColor: "bg.primary", height: "100vh" }}
         >
           <PageLayout.Header>
             <GlobalBar />
@@ -33,14 +32,24 @@ function App() {
           >
             <SideBar />
           </PageLayout.Pane>
-          <PageLayout.Content width="large">
-            <Routes>
-              <Route path="/" element={<Navigate to="Home" />} />
-              <Route path="Home" element={<Home />} />
-              <Route path="Myself" element={<Myself />} />
-              <Route path="MyFavourites" element={<MyFavourites />} />
-              <Route path="Projects" element={<Projects />} />
-            </Routes>
+          <PageLayout.Content padding="none">
+            <Box
+              sx={{
+                maxWidth: 1200,
+                width: "100%",
+                p: [4, 5, 6, 7],
+                mx: "auto ",
+                color: "text.primary",
+              }}
+            >
+              <Routes>
+                <Route path="/" element={<Navigate to="Home" />} />
+                <Route path="Home" element={<Home />} />
+                <Route path="About" element={<Myself />} />
+                <Route path="Projects" element={<Projects />} />
+                <Route path="PlayStation" element={<PlayStation />} />
+              </Routes>
+            </Box>
           </PageLayout.Content>
           <PageLayout.Footer></PageLayout.Footer>
         </PageLayout>
