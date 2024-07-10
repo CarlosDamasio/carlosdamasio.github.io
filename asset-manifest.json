@@ -1,22 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1b1585f.css",
-    "main.js": "/static/js/main.0622a818.js",
-    "static/js/56.5e350b5a.chunk.js": "/static/js/56.5e350b5a.chunk.js",
-    "static/media/palmela.svg": "/static/media/palmela.10cf719f031bfe9064c7e3fc282a268a.svg",
-    "static/media/lisboa.svg": "/static/media/lisboa.75f7da11012951e0723a0161037f6a78.svg",
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.827b8f0b.js",
+    "static/js/182.25e951f3.chunk.js": "/static/js/182.25e951f3.chunk.js",
     "static/media/avatar.svg": "/static/media/avatar.e802cdc1761e3eac17d9c7868b218a8f.svg",
-    "static/media/london.svg": "/static/media/london.84154772e94d0858e7ed1f7716585e7b.svg",
     "static/media/CV_Carlos_Damasio_2024_06.docx": "/static/media/CV_Carlos_Damasio_2024_06.a89bb3fd2c0139297de0.docx",
-    "static/media/github.svg": "/static/media/github.06cbf6003f0503529f8552f9aa0e6491.svg",
+    "static/media/github-white.svg": "/static/media/github-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
-    "main.a1b1585f.css.map": "/static/css/main.a1b1585f.css.map",
-    "main.0622a818.js.map": "/static/js/main.0622a818.js.map",
-    "56.5e350b5a.chunk.js.map": "/static/js/56.5e350b5a.chunk.js.map"
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.827b8f0b.js.map": "/static/js/main.827b8f0b.js.map",
+    "182.25e951f3.chunk.js.map": "/static/js/182.25e951f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1b1585f.css",
-    "static/js/main.0622a818.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.827b8f0b.js"
   ]
 }
