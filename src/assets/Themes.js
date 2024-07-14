@@ -26,7 +26,7 @@ const myTheme = deepmerge(theme, {
     dark: {
       colors: {
         header: {
-          bg: "#011330",
+          bg: "#032761",
         },
         text: {
           primary: "#f8f8ff",
@@ -34,7 +34,7 @@ const myTheme = deepmerge(theme, {
           default: "#f8f8ff",
         },
         bg: {
-          primary: "#262a30",
+          primary: "#415370",
           secondary: "#434c56",
           default: "#262a30",
         },

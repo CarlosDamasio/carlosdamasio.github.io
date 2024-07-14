@@ -51,7 +51,7 @@ function GlobalBar() {
               icon={AiOutlineFileWord}
               color="#d5d9e6"
               size={25}
-              sx={{ mr: 2, mt: 2, boxShadow: "0px 0px #888888" }}
+              sx={{ mr: 2, boxShadow: "0px 0px #888888" }}
             />
           </Tooltip>
         </Header.Link>

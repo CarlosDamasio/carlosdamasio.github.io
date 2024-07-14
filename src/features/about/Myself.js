@@ -4,14 +4,14 @@ import Divider from "../../components/Divider";
 
 function About() {
   return (
-    <>
+    <div className="toast-box">
       <Row>
         <Col>
-          <Toast className="toast-dark m-1" key="contacts">
+          <Toast className="toast-dark m-1" key="myself">
             <Toast.Header closeButton={false}>
               <strong className="me-auto">Myself</strong>
             </Toast.Header>
-            <Toast.Body className="toast-dark text-white">
+            <Toast.Body className="toast-dark ">
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Name:{" "}
@@ -40,11 +40,11 @@ function About() {
           </Toast>
         </Col>
         <Col>
-          <Toast className="toast-dark m-1" key="myself">
+          <Toast className="toast-dark m-1" key="job">
             <Toast.Header closeButton={false}>
-              <strong className="me-auto">My Job</strong>
+              <strong className="me-auto">Job</strong>
             </Toast.Header>
-            <Toast.Body className="toast-dark text-white">
+            <Toast.Body className="toast-dark ">
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Role:{" "}
@@ -68,13 +68,13 @@ function About() {
         </Col>
       </Row>
       <Divider />
-      <Row>
+      <Row className="justify-content-center align-items-center">
         <Col>
-          <Toast className="toast-dark m-1" key="myself">
+          <Toast className="toast-dark m-1" key="stack">
             <Toast.Header closeButton={false}>
-              <strong className="me-auto">My stack</strong>
+              <strong className="me-auto">Stack</strong>
             </Toast.Header>
-            <Toast.Body className="toast-dark text-white">
+            <Toast.Body className="toast-dark ">
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Areas:{" "}
@@ -98,12 +98,11 @@ function About() {
           </Toast>
         </Col>
         <Col>
-          <Toast className="toast-dark m-1" key="contacts">
+          <Toast className="toast-dark m-1" key="favourites">
             <Toast.Header closeButton={false}>
-              <strong className="me-auto">My favourites</strong>
-              <small>11 mins ago</small>
+              <strong className="me-auto">Favourites</strong>
             </Toast.Header>
-            <Toast.Body className="toast-dark text-white">
+            <Toast.Body className="toast-dark">
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Books:{" "}
@@ -126,7 +125,7 @@ function About() {
           </Toast>
         </Col>
       </Row>
-    </>
+    </div>
   );
 }
 export default About;

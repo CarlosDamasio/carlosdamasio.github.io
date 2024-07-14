@@ -20,10 +20,10 @@ function PlayStation() {
       </Timeline.Item>
       <Timeline.Item>
         <Timeline.Badge>
-          <Octicon icon={FeedTagIcon} size={32} color="dimgray" />
+          <Octicon icon={FeedTagIcon} size={32} color="#C0C9D7" />
         </Timeline.Badge>
         <Timeline.Body sx={{ color: "text.primary" }}>
-          <Text sx={{ fontWeight: "bold" }}>
+          <Text sx={{ fontWeight: "bold", color: "#C0C9D7" }}>
             Senior Business Intelligence Engineer (London, UK - August 2016 to
             July 2019)
           </Text>

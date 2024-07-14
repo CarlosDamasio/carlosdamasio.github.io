@@ -4,6 +4,7 @@ import SideBar from "./features/bars/SideBar";
 import Myself from "./features/about/Myself";
 import Home from "./features/home/Home";
 import PlayStation from "./features/career/PlayStation";
+import Novabase from "./features/career/Novabase";
 import Projects from "./features/projects/Projects";
 import {
   BrowserRouter as Router,
@@ -37,6 +38,8 @@ function App() {
               sx={{
                 maxWidth: 1200,
                 width: "100%",
+                height: "100%",
+                maxHeight: 1200,
                 p: [4, 5, 6, 7],
                 mx: "auto ",
                 color: "text.primary",
@@ -48,6 +51,7 @@ function App() {
                 <Route path="About" element={<Myself />} />
                 <Route path="Projects" element={<Projects />} />
                 <Route path="PlayStation" element={<PlayStation />} />
+                <Route path="Novabase" element={<Novabase />} />
               </Routes>
             </Box>
           </PageLayout.Content>
