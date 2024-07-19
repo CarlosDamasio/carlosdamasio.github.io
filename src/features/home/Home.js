@@ -35,7 +35,13 @@ function Home() {
           <Image
             src="https://carlosdamasio-github-io.s3.us-west-2.amazonaws.com/images/home_image.jpg"
             alt="HomeImage"
-            style={{ width: "100%", height: "100%", borderRadius: "5%" }}
+            style={{
+              width: "auto",
+              height: "auto",
+              borderRadius: "5%",
+              maxWidth: "100%",
+              maxHeight: "100%",
+            }}
           />
         </Box>
       </Box>

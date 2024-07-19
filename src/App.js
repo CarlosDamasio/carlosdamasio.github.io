@@ -5,7 +5,8 @@ import Myself from "./features/about/Myself";
 import Home from "./features/home/Home";
 import PlayStation from "./features/career/PlayStation";
 import Novabase from "./features/career/Novabase";
-import Projects from "./features/projects/Projects";
+import Education from "./features/career/Education";
+import MarkdownRenderer from "./components/MarkdownRenderer";
 import {
   BrowserRouter as Router,
   Routes,
@@ -21,7 +22,11 @@ function App() {
           containerWidth="full"
           padding="none"
           columnGap="none"
-          sx={{ backgroundColor: "bg.primary", height: "100vh" }}
+          sx={{
+            backgroundColor: "bg.primary",
+            height: "100vh",
+            overflow: "auto",
+          }}
         >
           <PageLayout.Header>
             <GlobalBar />
@@ -49,9 +54,15 @@ function App() {
                 <Route path="/" element={<Navigate to="Home" />} />
                 <Route path="Home" element={<Home />} />
                 <Route path="About" element={<Myself />} />
-                <Route path="Projects" element={<Projects />} />
+                <Route
+                  path="CarlosDamasio"
+                  element={
+                    <MarkdownRenderer url="https://raw.githubusercontent.com/CarlosDamasio/carlosdamasio.github.io/main/README.md" />
+                  }
+                />
                 <Route path="PlayStation" element={<PlayStation />} />
                 <Route path="Novabase" element={<Novabase />} />
+                <Route path="Education" element={<Education />} />
               </Routes>
             </Box>
           </PageLayout.Content>

@@ -47,15 +47,21 @@ function About() {
             <Toast.Body className="toast-dark ">
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
+                  Company:{" "}
+                </strong>
+                Sony Interactive Entertainment
+              </p>
+              <p>
+                <strong className="me-auto text-nowrap overflow-hidden">
                   Role:{" "}
                 </strong>
                 Senior Platform Engineer
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
-                  Company:{" "}
+                  Fields:{" "}
                 </strong>
-                Sony Interactive Entertainment
+                Cloud Computing and Data Analytics
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
@@ -107,13 +113,13 @@ function About() {
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Books:{" "}
                 </strong>
-                Lord of The Rings, The Expanse
+                Lord of The Rings, The Expanse, Freakonomics
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Hobbies:{" "}
                 </strong>
-                Squash, Gaming, Traveling
+                Squash, Gaming, Traveling, Reading, Concerts
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
