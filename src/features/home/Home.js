@@ -20,8 +20,8 @@ function Home() {
           </Text>
           <Text as="p">
             I'm currently a Senior Platform Engineer at Sony PlayStation with a
-            big focus on Business Intelligence systems where I have over a
-            decade worth of experience.
+            focus on Business Intelligence systems where I have over a decade
+            worth of experience.
           </Text>
           <Text as="p">
             At the moment I'm based in the UK, specifically in London but
