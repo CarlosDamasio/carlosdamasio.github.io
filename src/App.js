@@ -17,7 +17,7 @@ import {
 function App() {
   return (
     <BaseStyles>
-      <Router basename="/carlosdamasio.github.io">
+      <Router>
         <PageLayout
           containerWidth="full"
           padding="none"
