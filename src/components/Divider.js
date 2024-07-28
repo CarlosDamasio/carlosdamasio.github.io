@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/custom.css"; // Import custom styles
+import "../css/custom.css";
 
 const Divider = () => (
   <div className="divider-container">

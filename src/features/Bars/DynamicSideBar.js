@@ -1,7 +1,12 @@
 import { NavList } from "@primer/react";
 import NavItem from "../../components/NavItem";
+import { useMediaQuery } from "react-responsive";
 
-function SideBar() {
+const DynamicSideBar = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  if (isMobile) {
+    return null;
+  }
   return (
     <NavList sx={{ ml: 80 }}>
       <NavList.Group>
@@ -28,5 +33,5 @@ function SideBar() {
       </NavList.Group>
     </NavList>
   );
-}
-export default SideBar;
+};
+export default DynamicSideBar;

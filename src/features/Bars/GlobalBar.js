@@ -5,6 +5,7 @@ import curriculum from "./../../data/CV_Carlos_Damasio_2024_06.docx";
 import { AiOutlineFileWord } from "react-icons/ai";
 import { Avatar, Header, Octicon, Tooltip } from "@primer/react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import DynamicDrawer from "./DynamicDrawer";
 
 function HeaderLink({ to, children }) {
   const resolved = useResolvedPath(to);
@@ -23,7 +24,10 @@ function HeaderLink({ to, children }) {
 function GlobalBar() {
   return (
     <Header>
-      <Header.Item sx={{ ml: 80, position: "sticky" }}>
+      <Header.Item>
+        <DynamicDrawer />
+      </Header.Item>
+      <Header.Item sx={{ ml: 80, position: "sticky", overflow: "auto" }}>
         <HeaderLink
           to="/Home"
           sx={{
@@ -40,7 +44,7 @@ function GlobalBar() {
         </HeaderLink>
       </Header.Item>
       <Header.Item full></Header.Item>
-      <Header.Item>
+      <Header.Item sx={{ overflow: "auto" }}>
         <Header.Link
           href={curriculum}
           target="_blank"

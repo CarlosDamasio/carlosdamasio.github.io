@@ -5719,6 +5719,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"css-mediaquery@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "css-mediaquery@npm:0.1.2"
+  checksum: 10/f2f7512daa015f98b82bd65bbdd7c2100b16dddf22784bde2a8085f10f11e8775da57108016fe767f5e400afe64581c15d4e649c47725af7eac5f4094fa7ae43
+  languageName: node
+  linkType: hard
+
 "css-minimizer-webpack-plugin@npm:^3.2.0":
   version: 3.4.1
   resolution: "css-minimizer-webpack-plugin@npm:3.4.1"
@@ -8460,6 +8467,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hyphenate-style-name@npm:^1.0.0":
+  version: 1.1.0
+  resolution: "hyphenate-style-name@npm:1.1.0"
+  checksum: 10/b9ed74e29181d96bd58a2d0e62fc4a19879db591dba268275829ff0ae595fcdf11faafaeaa63330a45c3004664d7db1f0fc7cdb372af8ee4615ed8260302c207
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"
@@ -10350,6 +10364,15 @@ __metadata:
   version: 3.0.3
   resolution: "markdown-table@npm:3.0.3"
   checksum: 10/ee6e661935c85734620d2fd10e237a60ae2992ef861713b71aa66135a5d5ae957cf06ce5e15fedf3ed1fce839dd7af1f9e87c5729186490f69fa9469e8e5c3e8
+  languageName: node
+  linkType: hard
+
+"matchmediaquery@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "matchmediaquery@npm:0.4.2"
+  dependencies:
+    css-mediaquery: "npm:^0.1.2"
+  checksum: 10/eccdef80f89fa550dccf4ba236d32ca125fde470e043927deb89b06c28572d83a81eccad4e443ebb9360553fa24ea9a87f64a706ab1a6f0511bd0232181df5cf
   languageName: node
   linkType: hard
 
@@ -13149,7 +13172,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.0.0, prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.0.0, prop-types@npm:^15.6.1, prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -13454,6 +13477,20 @@ __metadata:
   version: 0.11.0
   resolution: "react-refresh@npm:0.11.0"
   checksum: 10/1275699e2edc39dbced9bdb00e2e167e3a2868e0c8ae117ba9551556368cfe70453068e5209240d827122aad5504a64c59a24b9b9a2a0ab932472c8750203ea3
+  languageName: node
+  linkType: hard
+
+"react-responsive@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "react-responsive@npm:10.0.0"
+  dependencies:
+    hyphenate-style-name: "npm:^1.0.0"
+    matchmediaquery: "npm:^0.4.2"
+    prop-types: "npm:^15.6.1"
+    shallow-equal: "npm:^3.1.0"
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: 10/733221e59ce93e67ff845941a037e27a0495eb99bd157416107b2d26ed12557da4ecdfd112c93c7adb4c060a0d19bd745cf8989c9646ce43859259b543fc6962
   languageName: node
   linkType: hard
 
@@ -14029,6 +14066,7 @@ __metadata:
     react-dom: "npm:^18.2.0"
     react-icons: "npm:^4.10.1"
     react-markdown: "npm:^9.0.1"
+    react-responsive: "npm:^10.0.0"
     react-router-dom: "npm:^6.14.2"
     react-scripts: "npm:5.0.1"
     remark-gfm: "npm:^4.0.0"
@@ -14340,6 +14378,13 @@ __metadata:
   version: 1.2.0
   resolution: "setprototypeof@npm:1.2.0"
   checksum: 10/fde1630422502fbbc19e6844346778f99d449986b2f9cdcceb8326730d2f3d9964dbcb03c02aaadaefffecd0f2c063315ebea8b3ad895914bf1afc1747fc172e
+  languageName: node
+  linkType: hard
+
+"shallow-equal@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "shallow-equal@npm:3.1.0"
+  checksum: 10/2e0eda6ff74da859a3766fd1865522aacfbef945652d2b629fda0ca5cd9f1f6579e6b3da8bd21e6e8be3a8b49c24484cdd2b8a128f5793d48cff73a0edec15f9
   languageName: node
   linkType: hard
 

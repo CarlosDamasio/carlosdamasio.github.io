@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Spinner from "react-bootstrap/Spinner";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import axios from "axios";
@@ -21,7 +22,7 @@ const MarkdownRenderer = ({ url }) => {
   }, [url]);
 
   if (error) return <div>Error fetching markdown: {error.message}</div>;
-  if (!markdown) return <div>Loading...</div>;
+  if (!markdown) return <Spinner animation="border" variant="secondary" />;
 
   return <ReactMarkdown children={markdown} remarkPlugins={[remarkGfm]} />;
 };

@@ -1,6 +1,6 @@
 import { BaseStyles, Box, PageLayout } from "@primer/react";
 import GlobalBar from "./features/bars/GlobalBar";
-import SideBar from "./features/bars/SideBar";
+import DynamicSideBar from "./features/bars/DynamicSideBar";
 import Myself from "./features/about/Myself";
 import Home from "./features/home/Home";
 import PlayStation from "./features/career/PlayStation";
@@ -36,7 +36,7 @@ function App() {
             position="start"
             aria-label="Secondary navigation"
           >
-            <SideBar />
+            <DynamicSideBar />
           </PageLayout.Pane>
           <PageLayout.Content padding="none">
             <Box
