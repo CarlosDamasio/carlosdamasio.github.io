@@ -27,7 +27,7 @@ function GlobalBar() {
       <Header.Item>
         <DynamicDrawer />
       </Header.Item>
-      <Header.Item sx={{ ml: 80, position: "sticky", overflow: "auto" }}>
+      <Header.Item sx={{ overflow: "auto" }}>
         <HeaderLink
           to="/Home"
           sx={{
@@ -83,7 +83,7 @@ function GlobalBar() {
               alt="linkedin"
               src={linkedin}
               size="25"
-              sx={{ mr: 80, boxShadow: "0px 0px #888888" }}
+              sx={{ boxShadow: "0px 0px #888888" }}
             />
           </Header.Link>
         </Tooltip>
