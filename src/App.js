@@ -38,7 +38,7 @@ function App() {
           >
             <DynamicSideBar />
           </PageLayout.Pane>
-          <PageLayout.Content padding="none">
+          <PageLayout.Content padding="none" sx={{ overflow: "auto" }}>
             <Box
               sx={{
                 maxWidth: 1200,
