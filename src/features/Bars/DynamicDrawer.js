@@ -15,7 +15,7 @@ const DynamicDrawer = () => {
 
   const navList = (
     <>
-      <NavList sx={{ ml: 80 }}>
+      <NavList>
         <NavList.Group>
           <NavItem to="Home">Home</NavItem>
         </NavList.Group>
