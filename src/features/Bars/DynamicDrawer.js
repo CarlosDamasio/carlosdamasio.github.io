@@ -55,7 +55,7 @@ const DynamicDrawer = () => {
       ></IconButton>
 
       <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton></Offcanvas.Header>
+        <Offcanvas.Header closeVariant="white" closeButton></Offcanvas.Header>
         <Offcanvas.Body>{navList}</Offcanvas.Body>
       </Offcanvas>
     </>
