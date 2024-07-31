@@ -23,11 +23,11 @@ function HeaderLink({ to, children }) {
 
 function GlobalBar() {
   return (
-    <Header>
+    <Header sx={{ overflow: "auto" }}>
       <Header.Item>
         <DynamicDrawer />
       </Header.Item>
-      <Header.Item sx={{ overflow: "auto" }}>
+      <Header.Item>
         <HeaderLink
           to="/Home"
           sx={{
@@ -44,7 +44,7 @@ function GlobalBar() {
         </HeaderLink>
       </Header.Item>
       <Header.Item full></Header.Item>
-      <Header.Item sx={{ overflow: "auto" }}>
+      <Header.Item>
         <Header.Link
           href={curriculum}
           target="_blank"
