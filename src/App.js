@@ -44,7 +44,6 @@ function App() {
                 maxWidth: 1200,
                 width: "100%",
                 height: "100%",
-                maxHeight: 1200,
                 p: [4, 5, 6, 7],
                 mx: "auto ",
                 color: "text.primary",
