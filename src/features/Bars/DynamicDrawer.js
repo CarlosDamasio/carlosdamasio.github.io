@@ -39,7 +39,9 @@ const DynamicDrawer = () => {
               <NavList.TrailingVisual>2011</NavList.TrailingVisual>
             </NavItem>
           </Nav.Link>
-          <NavItem to="Education">Education</NavItem>
+          <Nav.Link onClick={handleClose}>
+            <NavItem to="Education">Education</NavItem>
+          </Nav.Link>
         </NavList.Group>
         <NavList.Group title="Projects">
           <Nav.Link onClick={handleClose}>
