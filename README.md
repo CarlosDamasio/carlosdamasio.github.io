@@ -14,3 +14,4 @@ Using the free version of github pages (requiring a public repository)
 - Node for runtime
 - Yarn for package management
 - S3 for image store
+- Route53 for domain hosting
