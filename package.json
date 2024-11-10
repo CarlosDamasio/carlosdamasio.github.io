@@ -53,5 +53,5 @@
     "eslint-plugin-primer-react": "^4.0.0",
     "gh-pages": "^6.0.0"
   },
-  "packageManager": "yarn@4.3.1"
+  "packageManager": "yarn@4.5.1"
 }
