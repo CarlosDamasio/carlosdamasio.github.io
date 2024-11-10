@@ -1,6 +1,6 @@
 import { BaseStyles, Box, PageLayout } from "@primer/react";
-import GlobalBar from "./features/bars/GlobalBar";
-import DynamicSideBar from "./features/bars/DynamicSideBar";
+import GlobalBar from "./features/navs/GlobalBar";
+import DynamicSideBar from "./features/navs/DynamicSideBar";
 import Myself from "./features/about/Myself";
 import Home from "./features/home/Home";
 import PlayStation from "./features/career/PlayStation";
