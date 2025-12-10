@@ -15,21 +15,27 @@ const DynamicSideBar = () => {
       <NavList.Group>
         <NavItem to="About">About</NavItem>
       </NavList.Group>
+      <NavList.Group title="Professional">
+        <NavItem to="CV">
+          Curriculum Vitae
+        </NavItem>
+        <NavItem to="Projects">
+          Projects
+        </NavItem>
+      </NavList.Group>
       <NavList.Group title="Career">
         <NavItem to="PlayStation">
           PlayStation
-          <NavList.TrailingVisual>2016</NavList.TrailingVisual>
+          <NavList.TrailingVisual>2021</NavList.TrailingVisual>
         </NavItem>
         <NavItem to="Novabase">
           Novabase
-          <NavList.TrailingVisual>2011</NavList.TrailingVisual>
+          <NavList.TrailingVisual>2019</NavList.TrailingVisual>
         </NavItem>
         <NavItem to="Education">Education</NavItem>
       </NavList.Group>
-      <NavList.Group title="Projects">
+      <NavList.Group title="Extra">
         <NavItem to="CarlosDamasio">CarlosDamasio</NavItem>
-        <NavItem to="Solvent">Solvent.Life</NavItem>
-        <NavItem to="Miscellaneous">Misc</NavItem>
       </NavList.Group>
     </NavList>
   );

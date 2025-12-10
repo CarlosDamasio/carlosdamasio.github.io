@@ -1,0 +1,112 @@
+{
+  "professionalSummary": "Lead Platform Engineer with 5+ years of experience building scalable, high-performance systems. Specialized in cloud architecture, DevOps, and infrastructure automation. Passionate about mentoring teams and driving technical excellence.",
+  "education": [
+    {
+      "institution": "University/Institution Name",
+      "degree": "Bachelor's in Computer Science",
+      "field": "Computer Science",
+      "graduationDate": "2018-05-15",
+      "description": "Relevant coursework and achievements"
+    }
+  ],
+  "experience": [
+    {
+      "company": "PlayStation",
+      "jobTitle": "Senior Platform Engineer",
+      "startDate": "2021-01-01",
+      "endDate": "2023-12-31",
+      "isCurrentRole": false,
+      "location": "San Francisco, CA",
+      "description": "Led platform infrastructure initiatives",
+      "responsibilities": [
+        "Architected and deployed microservices infrastructure using Kubernetes",
+        "Reduced deployment time by 60% through CI/CD optimization",
+        "Mentored 3 junior engineers on best practices"
+      ],
+      "achievements": [
+        "Infrastructure uptime: 99.95%",
+        "Cost reduction: 40% annually",
+        "Team growth: Led hiring and onboarded 5 engineers"
+      ],
+      "technologies": ["Kubernetes", "AWS", "Terraform", "Go", "Python"]
+    },
+    {
+      "company": "Novabase",
+      "jobTitle": "Platform Engineer",
+      "startDate": "2019-06-01",
+      "endDate": "2020-12-31",
+      "isCurrentRole": false,
+      "location": "Lisbon, Portugal",
+      "description": "Built platform foundations for growing startup",
+      "responsibilities": [
+        "Designed and implemented CI/CD pipelines",
+        "Set up monitoring and observability infrastructure",
+        "Established DevOps best practices and documentation"
+      ],
+      "achievements": [
+        "Zero-downtime deployment strategy",
+        "50% reduction in incident response time",
+        "Automated 80% of manual operations"
+      ],
+      "technologies": ["Docker", "GitLab CI", "Prometheus", "ELK Stack", "PostgreSQL"]
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Go",
+      "Python",
+      "JavaScript/TypeScript",
+      "Bash/Shell",
+      "SQL"
+    ],
+    "platforms": [
+      "Kubernetes",
+      "AWS",
+      "Google Cloud Platform",
+      "Docker"
+    ],
+    "tools": [
+      "Terraform",
+      "Ansible",
+      "Jenkins",
+      "GitLab CI",
+      "GitHub Actions",
+      "Prometheus",
+      "ELK Stack",
+      "DataDog"
+    ],
+    "soft_skills": [
+      "Technical Leadership",
+      "Mentoring",
+      "Architecture Design",
+      "Problem Solving",
+      "Communication"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "Certified Kubernetes Administrator (CKA)",
+      "issuer": "CNCF",
+      "date": "2022-06-15",
+      "expiryDate": "2025-06-15",
+      "credentialId": "LF-XXXX"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Native"
+    },
+    {
+      "language": "Portuguese",
+      "proficiency": "Native"
+    }
+  ],
+  "contact": {
+    "email": "carlos@carlosdamasio.com",
+    "phone": "",
+    "website": "https://www.carlosdamasio.com",
+    "linkedin": "https://linkedin.com/in/carlosdamasio",
+    "github": "https://github.com/CarlosDamasio"
+  }
+}

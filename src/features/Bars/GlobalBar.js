@@ -43,6 +43,16 @@ function GlobalBar() {
           <span>CarlosDamasio.com</span>
         </HeaderLink>
       </Header.Item>
+      <Header.Item>
+        <HeaderLink to="/CV">
+          CV
+        </HeaderLink>
+      </Header.Item>
+      <Header.Item>
+        <HeaderLink to="/Projects">
+          Projects
+        </HeaderLink>
+      </Header.Item>
       <Header.Item full></Header.Item>
       <Header.Item>
         <Header.Link
@@ -50,7 +60,7 @@ function GlobalBar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Tooltip aria-label="CV" direction="se">
+          <Tooltip aria-label="CV Download" direction="se">
             <Octicon
               icon={AiOutlineFileWord}
               color="#d5d9e6"
@@ -66,7 +76,7 @@ function GlobalBar() {
             rel="noopener noreferrer"
           >
             <Avatar
-              alt="linkedin"
+              alt="github"
               src={github}
               size="25"
               sx={{ mr: 2, boxShadow: "0px 0px #888888" }}

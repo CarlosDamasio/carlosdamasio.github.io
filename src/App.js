@@ -1,12 +1,17 @@
 import { BaseStyles, Box, PageLayout } from "@primer/react";
-import GlobalBar from "./features/bars/GlobalBar";
-import DynamicSideBar from "./features/bars/DynamicSideBar";
+import { useEffect } from "react";
+import GlobalBar from "./features/Bars/GlobalBar";
+import DynamicSideBar from "./features/Bars/DynamicSideBar";
 import Myself from "./features/about/Myself";
 import Home from "./features/home/Home";
+import CV from "./features/career/CV";
 import PlayStation from "./features/career/PlayStation";
 import Novabase from "./features/career/Novabase";
 import Education from "./features/career/Education";
+import Projects from "./features/projects/Projects";
 import MarkdownRenderer from "./components/MarkdownRenderer";
+import { initializeSecurity } from "./security";
+import { logEnvConfig } from "./utils/env";
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,6 +20,11 @@ import {
 } from "react-router-dom";
 
 function App() {
+  // Initialize security on app load
+  useEffect(() => {
+    initializeSecurity();
+    logEnvConfig();
+  }, []);
   return (
     <BaseStyles>
       <Router>
@@ -54,6 +64,8 @@ function App() {
                 <Route path="/" element={<Navigate to="Home" />} />
                 <Route path="Home" element={<Home />} />
                 <Route path="About" element={<Myself />} />
+                <Route path="CV" element={<CV />} />
+                <Route path="Projects" element={<Projects />} />
                 <Route
                   path="CarlosDamasio"
                   element={

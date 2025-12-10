@@ -1,0 +1,183 @@
+[
+  {
+    "id": "playstation-infrastructure",
+    "title": "PlayStation Game Platform Infrastructure",
+    "shortDescription": "Led infrastructure modernization for gaming platform serving millions of users",
+    "fullDescription": "Architected and deployed a comprehensive Kubernetes-based infrastructure for PlayStation's game platform. Designed for high availability, scalability, and performance across global regions.",
+    "company": "PlayStation",
+    "role": "Senior Platform Engineer",
+    "startDate": "2021-01-01",
+    "endDate": "2023-12-31",
+    "duration": "2.5 years",
+    "imageUrl": "https://via.placeholder.com/400x200?text=PlayStation+Infrastructure",
+    "technologies": [
+      "Kubernetes",
+      "AWS",
+      "Terraform",
+      "Go",
+      "gRPC",
+      "Prometheus",
+      "Grafana"
+    ],
+    "businessImpact": {
+      "uptime": "99.95%",
+      "costReduction": "40% annually",
+      "deploymentSpeed": "60% faster",
+      "teamGrowth": "5 engineers hired and mentored"
+    },
+    "keyAchievements": [
+      "Designed and deployed multi-region Kubernetes infrastructure serving 10M+ daily active users",
+      "Reduced deployment time from 45 minutes to 15 minutes through automated CI/CD pipeline",
+      "Implemented comprehensive monitoring and alerting reducing MTTR by 40%",
+      "Established infrastructure-as-code practices with 100% infrastructure in Terraform",
+      "Led cost optimization initiative saving $2.4M annually"
+    ],
+    "challenges": [
+      "Managing complexity of multi-region deployments",
+      "Ensuring 99.95% uptime SLA during rapid scaling",
+      "Migrating legacy systems to cloud-native architecture",
+      "Training and mentoring team on new technologies"
+    ],
+    "links": {
+      "company": "https://www.playstation.com",
+      "github": "https://github.com/CarlosDamasio"
+    },
+    "featured": true,
+    "difficulty": "Expert"
+  },
+  {
+    "id": "novabase-devops",
+    "title": "Novabase DevOps Infrastructure",
+    "shortDescription": "Built production-ready DevOps infrastructure for growing fintech startup",
+    "fullDescription": "Designed and implemented complete DevOps infrastructure for Novabase, a fintech startup. Focused on reliability, security, and automation to enable rapid development cycles.",
+    "company": "Novabase",
+    "role": "Platform Engineer",
+    "startDate": "2019-06-01",
+    "endDate": "2020-12-31",
+    "duration": "1.5 years",
+    "imageUrl": "https://via.placeholder.com/400x200?text=Novabase+DevOps",
+    "technologies": [
+      "Docker",
+      "GitLab CI",
+      "PostgreSQL",
+      "Redis",
+      "Elasticsearch",
+      "Kibana",
+      "Prometheus"
+    ],
+    "businessImpact": {
+      "deployments": "20+ per day",
+      "incidentResponse": "50% faster",
+      "automation": "80% of operations"
+    },
+    "keyAchievements": [
+      "Designed and implemented CI/CD pipeline enabling 20+ deployments per day",
+      "Built ELK stack for centralized logging and monitoring across all services",
+      "Implemented automated testing and security scanning in CI pipeline",
+      "Established zero-downtime deployment procedures",
+      "Reduced incident response time from 60 minutes to 30 minutes"
+    ],
+    "challenges": [
+      "Building infrastructure from scratch in resource-constrained startup",
+      "Ensuring security and compliance for fintech application",
+      "Balancing automation with reliability in early-stage product",
+      "Managing infrastructure costs while scaling"
+    ],
+    "links": {
+      "company": "https://www.novabase.pt",
+      "github": "https://github.com/CarlosDamasio"
+    },
+    "featured": true,
+    "difficulty": "Advanced"
+  },
+  {
+    "id": "kubernetes-migration",
+    "title": "Legacy System Kubernetes Migration",
+    "shortDescription": "Successfully migrated monolithic legacy application to containerized Kubernetes infrastructure",
+    "fullDescription": "Led migration of 15-year-old monolithic application to modern Kubernetes platform with minimal downtime and zero data loss.",
+    "company": "PlayStation",
+    "role": "Lead Platform Engineer",
+    "startDate": "2022-03-01",
+    "endDate": "2022-11-30",
+    "duration": "9 months",
+    "imageUrl": "https://via.placeholder.com/400x200?text=K8s+Migration",
+    "technologies": [
+      "Kubernetes",
+      "Docker",
+      "Terraform",
+      "Ansible",
+      "Go",
+      "PostgreSQL"
+    ],
+    "businessImpact": {
+      "downtime": "< 2 minutes",
+      "dataLoss": "0 bytes",
+      "scalability": "10x improvement",
+      "costEfficiency": "35% reduction"
+    },
+    "keyAchievements": [
+      "Planned and executed migration with less than 2 minutes of downtime",
+      "Containerized legacy application with comprehensive testing",
+      "Achieved 10x improvement in horizontal scalability",
+      "Reduced infrastructure costs by 35% post-migration",
+      "Maintained 100% backward compatibility during transition"
+    ],
+    "challenges": [
+      "Understanding undocumented legacy codebase",
+      "Minimal downtime window allowed for migration",
+      "Ensuring data consistency during migration",
+      "Team resistance to new technologies"
+    ],
+    "links": {
+      "company": "https://www.playstation.com",
+      "github": "https://github.com/CarlosDamasio"
+    },
+    "featured": false,
+    "difficulty": "Expert"
+  },
+  {
+    "id": "monitoring-observability",
+    "title": "Enterprise Monitoring & Observability Platform",
+    "shortDescription": "Built comprehensive monitoring and observability solution for enterprise-scale systems",
+    "fullDescription": "Designed and implemented enterprise-grade monitoring, logging, and tracing infrastructure serving multiple teams and services.",
+    "company": "PlayStation",
+    "role": "Platform Engineer",
+    "startDate": "2021-06-01",
+    "endDate": "2022-12-31",
+    "duration": "1.5 years",
+    "imageUrl": "https://via.placeholder.com/400x200?text=Monitoring",
+    "technologies": [
+      "Prometheus",
+      "Grafana",
+      "ELK Stack",
+      "Jaeger",
+      "DataDog",
+      "Go",
+      "Python"
+    ],
+    "businessImpact": {
+      "alertAccuracy": "95%",
+      "mttr": "40% reduction",
+      "visibility": "100% services covered"
+    },
+    "keyAchievements": [
+      "Implemented centralized monitoring across 50+ microservices",
+      "Designed alerting rules with 95% accuracy and < 5% false positive rate",
+      "Built distributed tracing system for request flow analysis",
+      "Reduced MTTR from 60 minutes to 35 minutes",
+      "Created observability best practices documentation and training"
+    ],
+    "challenges": [
+      "Managing data explosion from high-volume metrics and logs",
+      "Achieving cost-effective storage for long-term retention",
+      "Alerting on meaningful patterns without false positives",
+      "Getting adoption across distributed teams"
+    ],
+    "links": {
+      "company": "https://www.playstation.com",
+      "github": "https://github.com/CarlosDamasio"
+    },
+    "featured": false,
+    "difficulty": "Advanced"
+  }
+]
