@@ -1,6 +1,8 @@
 import { Box, Text, Button, Link } from "@primer/react";
 import Image from "react-bootstrap/Image";
 import { Link as RouterLink } from "react-router-dom";
+import { Octicon } from "@primer/react";
+import { FeedTagIcon } from "@primer/octicons-react";
 import cvData from "../../assets/cv-data.json";
 
 function Home() {
@@ -43,7 +45,7 @@ function Home() {
                 lineHeight: 1.2,
               }}
             >
-              Lead Platform Engineer
+              Senior Platform Engineer
             </Text>
             <Text
               as="p"
@@ -54,14 +56,29 @@ function Home() {
                 marginTop: 1,
               }}
             >
-              Building scalable infrastructure & driving technical excellence
+              Analytics Platform & Business Intelligence Expert
             </Text>
           </Box>
 
           {/* Professional Summary */}
           <Text as="p" sx={{ fontSize: 1, lineHeight: 1.6 }}>
-            {cvData.professionalSummary}
+            Senior Platform Engineer with 10+ years of experience in Business Intelligence, 
+            Analytics platforms, and data engineering. Currently based in London, UK, with 
+            expertise across multiple industries including telecommunications, gaming, and 
+            public administration. Specialized in managing and enhancing analytics tool stacks 
+            such as MicroStrategy, Tableau, and Snowflake.
           </Text>
+
+          {/* Current Role Highlight */}
+          <Box sx={{ p: 2, bg: "canvas.subtle", borderRadius: 2, borderLeft: "4px solid", borderColor: "accent.fg" }}>
+            <Text as="p" sx={{ fontSize: 0, fontWeight: "bold", margin: 0, mb: 1 }}>
+              Current Role
+            </Text>
+            <Text as="p" sx={{ fontSize: 0, margin: 0, lineHeight: 1.5 }}>
+              <strong>Senior Platform Engineer</strong> at Sony PlayStation (London, UK)<br />
+              Leading the Analytics Platform team, managing and enhancing MicroStrategy, Tableau, and Snowflake stacks.
+            </Text>
+          </Box>
 
           {/* Key Expertise Areas */}
           <Box>
@@ -69,7 +86,7 @@ function Home() {
               Key Expertise:
             </Text>
             <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-              {cvData.skills.languages.slice(0, 4).map((skill) => (
+              {["Business Intelligence", "Analytics", "Data Engineering", "Cloud Platforms", "MicroStrategy", "Tableau"].map((skill) => (
                 <Box
                   key={skill}
                   sx={{
@@ -106,7 +123,7 @@ function Home() {
             </Button>
             <Button
               as={Link}
-              href={cvData.contact.linkedin}
+              href="https://www.linkedin.com/in/cdamasio19/"
               target="_blank"
               rel="noopener noreferrer"
               variant="default"
@@ -116,7 +133,7 @@ function Home() {
             </Button>
             <Button
               as={Link}
-              href={cvData.contact.github}
+              href="https://github.com/CarlosDamasio"
               target="_blank"
               rel="noopener noreferrer"
               variant="default"
@@ -149,31 +166,145 @@ function Home() {
         </Box>
       </Box>
 
-      {/* Experience Overview */}
+      {/* Career Timeline Overview */}
       <Box width="100%" textAlign="left" mb={4} sx={{ borderTop: "1px solid", borderColor: "border.default", pt: 4 }}>
-        <Text as="h2" sx={{ fontSize: 3, fontWeight: "bold", mb: 2 }}>
-          Career Highlights
+        <Text as="h2" sx={{ fontSize: 3, fontWeight: "bold", mb: 3 }}>
+          Professional Journey
         </Text>
-        <Box sx={{ display: "grid", gridTemplateColumns: ["1fr", "1fr", "1fr 1fr"], gap: 3 }}>
-          {cvData.experience.map((exp, idx) => (
-            <Box key={idx} sx={{ p: 2, bg: "canvas.subtle", borderRadius: 2 }}>
-              <Text as="h3" sx={{ fontWeight: "bold", fontSize: 1, margin: 0 }}>
-                {exp.jobTitle}
+        
+        {/* PlayStation Section */}
+        <Box mb={4}>
+          <Box sx={{ display: "flex", gap: 2, alignItems: "flex-start", mb: 2 }}>
+            <Octicon icon={FeedTagIcon} size={24} sx={{ color: "accent.fg", mt: 1 }} />
+            <Box>
+              <Text as="h3" sx={{ fontSize: 1, fontWeight: "bold", margin: 0 }}>
+                Senior Platform Engineer at Sony PlayStation
               </Text>
-              <Text as="p" sx={{ color: "text.secondary", fontSize: 0, margin: 0 }}>
-                {exp.company} • {exp.location}
-              </Text>
-              <Text as="p" sx={{ fontSize: 0, margin: 0, mt: 1 }}>
-                {new Date(exp.startDate).getFullYear()} -{" "}
-                {exp.isCurrentRole
-                  ? "Present"
-                  : new Date(exp.endDate).getFullYear()}
-              </Text>
-              <Text as="p" sx={{ fontSize: 0, mt: 2, lineHeight: 1.5 }}>
-                {exp.description}
+              <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
+                London, UK • July 2019 to Present
               </Text>
             </Box>
-          ))}
+          </Box>
+          <Text as="p" sx={{ fontSize: 0, ml: 6, lineHeight: 1.6, color: "text.primary" }}>
+            Working as Senior Platform Engineer for the Analytics Platform team. My work focuses on hosting, 
+            managing and enhancing our Analytics tools stacks such as MicroStrategy, Tableau and Snowflake. 
+            Responsibilities include infrastructure management, platform optimization, and team mentoring.
+          </Text>
+        </Box>
+
+        {/* Previous PlayStation Role */}
+        <Box mb={4}>
+          <Box sx={{ display: "flex", gap: 2, alignItems: "flex-start", mb: 2 }}>
+            <Octicon icon={FeedTagIcon} size={24} sx={{ color: "text.secondary", mt: 1 }} />
+            <Box>
+              <Text as="h3" sx={{ fontSize: 1, fontWeight: "bold", margin: 0 }}>
+                Senior Business Intelligence Engineer at Sony PlayStation
+              </Text>
+              <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
+                London, UK • August 2016 to July 2019
+              </Text>
+            </Box>
+          </Box>
+          <Text as="p" sx={{ fontSize: 0, ml: 6, lineHeight: 1.6, color: "text.primary" }}>
+            Developed dashboards and reporting solutions, built data pipelines and data structures. 
+            Mentored business users on extracting value from team products and managed business 
+            requirements for further enhancements.
+          </Text>
+        </Box>
+
+        {/* Novabase Experience Preview */}
+        <Box>
+          <Box sx={{ display: "flex", gap: 2, alignItems: "flex-start", mb: 2 }}>
+            <Octicon icon={FeedTagIcon} size={24} sx={{ color: "text.secondary", mt: 1 }} />
+            <Box>
+              <Text as="h3" sx={{ fontSize: 1, fontWeight: "bold", margin: 0 }}>
+                Business Intelligence Projects at Novabase
+              </Text>
+              <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
+                Multiple countries • Various industries
+              </Text>
+            </Box>
+          </Box>
+          <Text as="p" sx={{ fontSize: 0, ml: 6, lineHeight: 1.6, color: "text.primary" }}>
+            Worked on multiple Business Intelligence projects across various industries and countries including 
+            Vodafone (UK) and Movicel (Angola). Led BI teams, managed reporting platforms, and oversaw ETL development.
+          </Text>
+        </Box>
+
+        {/* Link to see more */}
+        <Box sx={{ mt: 3, p: 2, bg: "canvas.subtle", borderRadius: 2 }}>
+          <Text as="p" sx={{ fontSize: 0, mb: 1 }}>
+            Want to see more details about my career journey and projects?
+          </Text>
+          <Button
+            as={RouterLink}
+            to="/Projects"
+            size="small"
+            variant="primary"
+            sx={{ textDecoration: "none" }}
+          >
+            Explore My Work
+          </Button>
+        </Box>
+      </Box>
+
+      {/* Education & Certifications */}
+      <Box width="100%" textAlign="left" mb={4} sx={{ borderTop: "1px solid", borderColor: "border.default", pt: 4 }}>
+        <Text as="h2" sx={{ fontSize: 3, fontWeight: "bold", mb: 3 }}>
+          Education & Certifications
+        </Text>
+        
+        <Box sx={{ display: "grid", gridTemplateColumns: ["1fr", "1fr 1fr"], gap: 3 }}>
+          {/* Education */}
+          <Box sx={{ p: 2, bg: "canvas.subtle", borderRadius: 2 }}>
+            <Text as="h3" sx={{ fontSize: 1, fontWeight: "bold", mb: 2, margin: 0 }}>
+              Academic Background
+            </Text>
+            <Text as="p" sx={{ fontSize: 0, mb: 1, margin: 0 }}>
+              <strong>ISCTE-IUL (Lisbon, Portugal)</strong>
+            </Text>
+            <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
+              BSc in Computer Science and Business Administration
+            </Text>
+          </Box>
+
+          {/* Certifications */}
+          <Box sx={{ p: 2, bg: "canvas.subtle", borderRadius: 2 }}>
+            <Text as="h3" sx={{ fontSize: 1, fontWeight: "bold", mb: 2, margin: 0 }}>
+              Professional Certifications
+            </Text>
+            <Text as="p" sx={{ fontSize: 0, mb: 1, margin: 0 }}>
+              ✓ AWS Certified Solutions Architect Associate (2019)
+            </Text>
+            <Text as="p" sx={{ fontSize: 0, margin: 0 }}>
+              ✓ MicroStrategy Certified Engineering Principal (2015)
+            </Text>
+          </Box>
+        </Box>
+      </Box>
+
+      {/* Languages Section */}
+      <Box width="100%" textAlign="left" mb={4} sx={{ borderTop: "1px solid", borderColor: "border.default", pt: 4 }}>
+        <Text as="h2" sx={{ fontSize: 3, fontWeight: "bold", mb: 2 }}>
+          Languages
+        </Text>
+        <Box sx={{ display: "flex", gap: 2 }}>
+          <Box sx={{ p: 2, bg: "canvas.subtle", borderRadius: 2, flex: 1 }}>
+            <Text as="p" sx={{ fontSize: 0, fontWeight: "bold", margin: 0 }}>
+              English
+            </Text>
+            <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
+              Fluent
+            </Text>
+          </Box>
+          <Box sx={{ p: 2, bg: "canvas.subtle", borderRadius: 2, flex: 1 }}>
+            <Text as="p" sx={{ fontSize: 0, fontWeight: "bold", margin: 0 }}>
+              Portuguese
+            </Text>
+            <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
+              Native
+            </Text>
+          </Box>
         </Box>
       </Box>
 
@@ -183,9 +314,10 @@ function Home() {
           About This Site
         </Text>
         <Text as="p" sx={{ lineHeight: 1.6 }}>
-          Welcome to my professional portfolio. This site serves as a comprehensive showcase of my
-          career, expertise, and projects. Explore my CV, past work, and technical skills to learn
-          more about what I bring to the table. Feel free to connect via LinkedIn or GitHub!
+          Welcome to my professional portfolio. This site serves as a comprehensive showcase of my career 
+          in Business Intelligence and Analytics. Explore my detailed CV, past work across multiple companies 
+          and industries, and technical expertise. I'm based in London, UK, but have worked across Europe 
+          and Africa. Feel free to connect via LinkedIn or GitHub!
         </Text>
       </Box>
     </Box>
