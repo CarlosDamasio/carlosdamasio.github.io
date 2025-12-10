@@ -6,40 +6,64 @@ const myTheme = deepmerge(theme, {
     light: {
       colors: {
         header: {
-          bg: "#032761",
+          bg: "#0d1117",
         },
         text: {
-          primary: "#4A4A4A",
-          secondary: "#4A4A4A",
-          default: "#4A4A4A",
+          primary: "#e6edf3",
+          secondary: "#8b949e",
+          default: "#e6edf3",
         },
         bg: {
-          primary: "#f8f8ff",
-          secondary: "#4A4A4A",
-          default: "#f5faff",
+          primary: "#0d1117",
+          secondary: "#161b22",
+          default: "#21262d",
         },
         border: {
-          default: "#4A4A4A",
+          default: "#30363d",
+        },
+        canvas: {
+          default: "#0d1117",
+          overlay: "#161b22",
+          inset: "#010409",
+          subtle: "#161b22",
+        },
+        accent: {
+          fg: "#58a6ff",
+          emphasis: "#1f6feb",
+          muted: "#388bfd",
+          subtle: "#0d1117",
         },
       },
     },
     dark: {
       colors: {
         header: {
-          bg: "#032761",
+          bg: "#0d1117",
         },
         text: {
-          primary: "#f8f8ff",
-          secondary: "#708090",
-          default: "#f8f8ff",
+          primary: "#e6edf3",
+          secondary: "#8b949e",
+          default: "#e6edf3",
         },
         bg: {
-          primary: "#415370",
-          secondary: "#434c56",
-          default: "#262a30",
+          primary: "#0d1117",
+          secondary: "#161b22",
+          default: "#21262d",
         },
         border: {
-          default: "#f8f8ff",
+          default: "#30363d",
+        },
+        canvas: {
+          default: "#0d1117",
+          overlay: "#161b22",
+          inset: "#010409",
+          subtle: "#161b22",
+        },
+        accent: {
+          fg: "#58a6ff",
+          emphasis: "#1f6feb",
+          muted: "#388bfd",
+          subtle: "#0d1117",
         },
       },
     },

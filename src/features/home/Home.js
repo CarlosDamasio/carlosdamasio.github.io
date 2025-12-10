@@ -45,7 +45,7 @@ function Home() {
                 lineHeight: 1.2,
               }}
             >
-              Senior Platform Engineer
+              {cvData.personalInfo?.title || "Senior Software Engineer"}
             </Text>
             <Text
               as="p"
@@ -62,11 +62,7 @@ function Home() {
 
           {/* Professional Summary */}
           <Text as="p" sx={{ fontSize: 1, lineHeight: 1.6 }}>
-            Senior Platform Engineer with 10+ years of experience in Business Intelligence, 
-            Analytics platforms, and data engineering. Currently based in London, UK, with 
-            expertise across multiple industries including telecommunications, gaming, and 
-            public administration. Specialized in managing and enhancing analytics tool stacks 
-            such as MicroStrategy, Tableau, and Snowflake.
+            {cvData.professionalSummary}
           </Text>
 
           {/* Current Role Highlight */}
@@ -75,8 +71,8 @@ function Home() {
               Current Role
             </Text>
             <Text as="p" sx={{ fontSize: 0, margin: 0, lineHeight: 1.5 }}>
-              <strong>Senior Platform Engineer</strong> at Sony PlayStation (London, UK)<br />
-              Leading the Analytics Platform team, managing and enhancing MicroStrategy, Tableau, and Snowflake stacks.
+              <strong>{cvData.experience[0]?.jobTitle}</strong> at {cvData.experience[0]?.company} ({cvData.experience[0]?.location})<br />
+              {cvData.experience[0]?.description}
             </Text>
           </Box>
 
@@ -86,7 +82,7 @@ function Home() {
               Key Expertise:
             </Text>
             <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-              {["Business Intelligence", "Analytics", "Data Engineering", "Cloud Platforms", "MicroStrategy", "Tableau"].map((skill) => (
+              {cvData.experience[0]?.technologies?.slice(0, 6).map((skill) => (
                 <Box
                   key={skill}
                   sx={{

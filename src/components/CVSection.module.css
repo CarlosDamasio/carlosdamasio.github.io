@@ -1,48 +1,50 @@
 .cvSection {
   width: 100%;
-  background: var(--background-secondary, #ffffff);
-  border: 1px solid var(--border-color, #e0e0e0);
-  border-radius: 8px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: 6px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .cvSection.expanded {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.1);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
-  border-bottom: 1px solid var(--border-color, #e0e0e0);
-  background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 100%);
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--border-primary);
+  background: var(--bg-tertiary);
 }
 
 .title {
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-primary, #000000);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
 .icon {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   display: inline-block;
+  color: var(--accent-primary);
 }
 
 .toggleButton {
-  background: var(--primary-color, #0366d6);
-  color: white;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 1.5rem;
+  background: transparent;
+  color: var(--accent-primary);
+  border: 1px solid var(--accent-primary);
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  font-size: 1.25rem;
   cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
@@ -53,43 +55,43 @@
 }
 
 .toggleButton:hover {
-  background: var(--primary-color-hover, #0256c7);
-  transform: scale(1.1);
+  background: var(--accent-primary);
+  color: var(--bg-primary);
 }
 
 .toggleButton:focus {
-  outline: 2px solid var(--focus-color, #0366d6);
+  outline: 2px solid var(--accent-primary);
   outline-offset: 2px;
 }
 
 .toggleButton:active {
-  transform: scale(0.95);
+  opacity: 0.9;
 }
 
 .preview {
-  padding: 1rem 1.5rem;
-  background: var(--background-tertiary, #f5f5f5);
-  color: var(--text-secondary, #666666);
+  padding: 1rem 1.25rem;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
   text-align: center;
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
 .preview:hover {
-  background: var(--background-hover, #eeeeee);
+  background: var(--border-primary);
 }
 
 .previewText {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.9375rem;
 }
 
 .content {
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.25rem;
 }
 
 .section {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .section:last-child {
@@ -97,7 +99,7 @@
 }
 
 .sectionTitle {
-  margin: 0 0 1.25rem 0;
+  margin: 0 0 1rem 0;
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--text-primary, #000000);

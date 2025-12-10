@@ -1,40 +1,50 @@
 import { Col, Row, Toast } from "react-bootstrap";
 import "../../css/custom.css";
 import Divider from "../../components/Divider";
+import cvData from "../../assets/cv-data.json";
 
 function About() {
+  const personalInfo = cvData.personalInfo || {};
+  const currentRole = cvData.experience?.[0] || {};
+
   return (
     <div className="toast-box">
       <Row>
         <Col>
           <Toast className="toast-dark m-1" key="myself">
             <Toast.Header closeButton={false}>
-              <strong className="me-auto">Myself</strong>
+              <strong className="me-auto">Personal Information</strong>
             </Toast.Header>
             <Toast.Body className="toast-dark ">
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Name:{" "}
                 </strong>
-                Carlos Damasio
+                {personalInfo.name || "Carlos Damasio"}
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Email:{" "}
                 </strong>
-                carlosadamasio@gmail.com
+                <a href={`mailto:${personalInfo.email}`}>{personalInfo.email || "carlosadamasio@gmail.com"}</a>
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
-                  From:{" "}
+                  Phone:{" "}
                 </strong>
-                Palmela, Portugal
+                <a href={`tel:${personalInfo.phone}`}>{personalInfo.phone || "+447534255518"}</a>
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
-                  Located:{" "}
+                  Nationality:{" "}
                 </strong>
-                London, UK
+                {personalInfo.nationality || "Portuguese"}
+              </p>
+              <p>
+                <strong className="me-auto text-nowrap overflow-hidden">
+                  Currently Located:{" "}
+                </strong>
+                {personalInfo.location || "London, UK"}
               </p>
             </Toast.Body>
           </Toast>
@@ -42,32 +52,32 @@ function About() {
         <Col>
           <Toast className="toast-dark m-1" key="job">
             <Toast.Header closeButton={false}>
-              <strong className="me-auto">Job</strong>
+              <strong className="me-auto">Current Position</strong>
             </Toast.Header>
             <Toast.Body className="toast-dark ">
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Company:{" "}
                 </strong>
-                Sony Interactive Entertainment
+                {currentRole.company || "Sony Interactive Entertainment Europe"}
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Role:{" "}
                 </strong>
-                Senior Platform Engineer
+                {currentRole.jobTitle || "Senior Platform Engineer"}
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
-                  Fields:{" "}
+                  Location:{" "}
                 </strong>
-                Cloud Computing and Data Analytics
+                {currentRole.location || "London, UK"}
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Years Experience:{" "}
                 </strong>
-                +10
+                10+
               </p>
             </Toast.Body>
           </Toast>
@@ -78,54 +88,59 @@ function About() {
         <Col>
           <Toast className="toast-dark m-1" key="stack">
             <Toast.Header closeButton={false}>
-              <strong className="me-auto">Stack</strong>
+              <strong className="me-auto">Primary Skills</strong>
             </Toast.Header>
             <Toast.Body className="toast-dark ">
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Areas:{" "}
                 </strong>
-                Data Visualisation, Data Engineering, AWS, IaC & CI/CD
+                Business Intelligence, Data Engineering, Platform Engineering, Cloud Infrastructure
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Technologies:{" "}
                 </strong>
-                Terraform, Docker, SQL & NoSQL Databases, Packer, Docker,
-                Ansible, React
+                Terraform, Ansible, Docker, AWS, Python, Golang, SQL, React, MicroStrategy, Tableau
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
                   Languages:{" "}
                 </strong>
-                Python, SQL, Golang, JS
+                Python, SQL, Golang, JavaScript, Bash
               </p>
             </Toast.Body>
           </Toast>
         </Col>
         <Col>
-          <Toast className="toast-dark m-1" key="favourites">
+          <Toast className="toast-dark m-1" key="languages">
             <Toast.Header closeButton={false}>
-              <strong className="me-auto">Favourites</strong>
+              <strong className="me-auto">Languages</strong>
             </Toast.Header>
             <Toast.Body className="toast-dark">
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
-                  Books:{" "}
+                  Portuguese:{" "}
                 </strong>
-                Lord of The Rings, The Expanse, Freakonomics
+                Native
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
-                  Hobbies:{" "}
+                  English:{" "}
                 </strong>
-                Squash, Gaming, Traveling, Reading, Concerts
+                Fluent
               </p>
               <p>
                 <strong className="me-auto text-nowrap overflow-hidden">
-                  Music:{" "}
+                  Spanish:{" "}
                 </strong>
-                AC/DC, Buddy Rich, Morphine, Tool
+                Conversational
+              </p>
+              <p>
+                <strong className="me-auto text-nowrap overflow-hidden">
+                  Date of Birth:{" "}
+                </strong>
+                19th August 1987
               </p>
             </Toast.Body>
           </Toast>

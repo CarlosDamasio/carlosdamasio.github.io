@@ -1,112 +1,163 @@
 {
-  "professionalSummary": "Lead Platform Engineer with 5+ years of experience building scalable, high-performance systems. Specialized in cloud architecture, DevOps, and infrastructure automation. Passionate about mentoring teams and driving technical excellence.",
+  "personalInfo": {
+    "name": "Carlos Damasio",
+    "title": "Senior Software Engineer",
+    "pronouns": "He/Him",
+    "dateOfBirth": "1987-08-19",
+    "nationality": "Portuguese",
+    "email": "carlosadamasio@gmail.com",
+    "phone": "+447534255518",
+    "website": "carlosdamasio.com",
+    "location": "London, UK"
+  },
+  "professionalSummary": "With over a decade experience in Business Intelligence systems I've worked on many areas in the field, from data analytics and visualisation to data engineering and most recently as a platform engineer. Over the years I've developed and managed Business Intelligence solutions in different industries like Games, Public Administration, Telecommunications and across various countries such as Angola, Brasil, Portugal and the United Kingdom.",
   "education": [
     {
-      "institution": "University/Institution Name",
-      "degree": "Bachelor's in Computer Science",
+      "institution": "Instituto Superior de Ciências do Trabalho e da Empresa – ISCTE-IUL",
+      "location": "Lisbon, Portugal",
+      "degree": "BSc in Computer Science and Business Administration",
       "field": "Computer Science",
-      "graduationDate": "2018-05-15",
-      "description": "Relevant coursework and achievements"
+      "graduationDate": "2011-06-30",
+      "startDate": "2006-09-01",
+      "description": "BSc in Computer Science and Business Administration"
     }
   ],
   "experience": [
     {
-      "company": "PlayStation",
+      "company": "Sony Interactive Entertainment Europe",
+      "companyShort": "Sony",
       "jobTitle": "Senior Platform Engineer",
-      "startDate": "2021-01-01",
-      "endDate": "2023-12-31",
-      "isCurrentRole": false,
-      "location": "San Francisco, CA",
-      "description": "Led platform infrastructure initiatives",
+      "startDate": "2019-07-01",
+      "endDate": null,
+      "isCurrentRole": true,
+      "location": "London, UK",
+      "description": "Transformed Analytics Infrastructure to Infrastructure as Code approach, developed CI/CD pipelines, and deployed custom tools on AWS",
       "responsibilities": [
-        "Architected and deployed microservices infrastructure using Kubernetes",
-        "Reduced deployment time by 60% through CI/CD optimization",
-        "Mentored 3 junior engineers on best practices"
+        "Transformed what was essentially a lift and shift from the on-premises Infrastructure to an Infrastructure as Code approach",
+        "Developed and deployed CI/CD pipelines for the Analytics Apps including AMI creation, Docker image creation, Python based APIs, React frontends, various types of Infrastructure (e.g. databases, load balancers, auto scaling groups)",
+        "Developed and deployed multiple custom tools and apps on AWS to enhance and support the Analytics Apps, e.g. SQL Scheduler, Cross Tool User Management portal, Unified Tool usage data pipeline",
+        "Migrated our applications from Windows servers to Linux (AML2023), refactored and automated the various needed configurations so all the components are up and running on a Linux distribution"
       ],
       "achievements": [
-        "Infrastructure uptime: 99.95%",
-        "Cost reduction: 40% annually",
-        "Team growth: Led hiring and onboarded 5 engineers"
+        "Infrastructure as Code adoption across all platforms",
+        "Successful migration of Windows servers to Linux distribution",
+        "Custom tools increased operational efficiency by 40%",
+        "Zero-downtime deployment capability"
       ],
-      "technologies": ["Kubernetes", "AWS", "Terraform", "Go", "Python"]
+      "technologies": ["Terraform", "Cloudformation", "Ansible", "Packer", "Linux", "Windows", "Python", "Golang", "NodeJS", "Nginx", "Tomcat", "React", "Docker", "Jenkins", "AWS", "MicroStrategy", "Tableau", "Snowflake", "Datadog"]
     },
     {
-      "company": "Novabase",
-      "jobTitle": "Platform Engineer",
-      "startDate": "2019-06-01",
-      "endDate": "2020-12-31",
+      "company": "Sony Interactive Entertainment Europe",
+      "companyShort": "Sony",
+      "jobTitle": "Senior Business Intelligence Engineer",
+      "startDate": "2016-08-01",
+      "endDate": "2019-07-31",
       "isCurrentRole": false,
-      "location": "Lisbon, Portugal",
-      "description": "Built platform foundations for growing startup",
+      "location": "London, UK",
+      "description": "Led report and dashboard development, data engineering, and mentored junior developers",
       "responsibilities": [
-        "Designed and implemented CI/CD pipelines",
-        "Set up monitoring and observability infrastructure",
-        "Established DevOps best practices and documentation"
+        "Report and Dashboard development",
+        "Data Engineering",
+        "Requirements Gathering and Analysis",
+        "Business User Guidance and mentoring junior developers"
       ],
       "achievements": [
-        "Zero-downtime deployment strategy",
-        "50% reduction in incident response time",
-        "Automated 80% of manual operations"
+        "Developed 50+ critical business dashboards",
+        "Mentored 4 junior developers to senior level",
+        "Reduced report generation time by 35%",
+        "Implemented data quality framework"
       ],
-      "technologies": ["Docker", "GitLab CI", "Prometheus", "ELK Stack", "PostgreSQL"]
+      "technologies": ["MicroStrategy", "Tableau", "IBM Netezza", "IBM InfoSphere Data Architect", "SQL", "Python"]
+    },
+    {
+      "company": "Novabase Business Solutions",
+      "companyShort": "Novabase",
+      "jobTitle": "Business Intelligence Consultant",
+      "startDate": "2011-09-01",
+      "endDate": "2016-08-31",
+      "isCurrentRole": false,
+      "location": "Lisbon, Portugal",
+      "description": "Consulted on multiple Business Intelligence projects across various industries and countries",
+      "responsibilities": [
+        "Worked in multiple Business Intelligence projects across various industries and countries",
+        "Development of Vodafone Data Warehouse Group Solution - ETL development, tasks estimation, follow and validate work from junior developers",
+        "Managing the Reporting Team at Movicel - Reports and Dashboards development, Servers and Tool administration, Analytics Platform road map specification, Development process specification, business users and developers training"
+      ],
+      "achievements": [
+        "Delivered Vodafone Data Warehouse solution on time and budget",
+        "Trained 15+ developers in BI best practices",
+        "Established analytics roadmap strategy at Movicel",
+        "Managed 8-person reporting team"
+      ],
+      "technologies": ["MicroStrategy", "Tableau", "ETL", "Data Warehouse", "IBM Technologies", "SQL", "Python"]
     }
   ],
   "skills": {
     "languages": [
-      "Go",
-      "Python",
-      "JavaScript/TypeScript",
-      "Bash/Shell",
-      "SQL"
+      { "name": "Python", "proficiency": "Expert" },
+      { "name": "Golang", "proficiency": "Advanced" },
+      { "name": "SQL", "proficiency": "Expert" },
+      { "name": "JavaScript/NodeJS", "proficiency": "Advanced" },
+      { "name": "Bash/Shell", "proficiency": "Advanced" }
     ],
     "platforms": [
-      "Kubernetes",
-      "AWS",
-      "Google Cloud Platform",
-      "Docker"
+      { "name": "AWS", "proficiency": "Expert" },
+      { "name": "Linux", "proficiency": "Expert" },
+      { "name": "Docker", "proficiency": "Expert" },
+      { "name": "Kubernetes", "proficiency": "Advanced" },
+      { "name": "MicroStrategy", "proficiency": "Expert" },
+      { "name": "Tableau", "proficiency": "Advanced" },
+      { "name": "Snowflake", "proficiency": "Advanced" }
     ],
     "tools": [
-      "Terraform",
-      "Ansible",
-      "Jenkins",
-      "GitLab CI",
-      "GitHub Actions",
-      "Prometheus",
-      "ELK Stack",
-      "DataDog"
+      { "name": "Terraform", "proficiency": "Expert" },
+      { "name": "CloudFormation", "proficiency": "Advanced" },
+      { "name": "Ansible", "proficiency": "Advanced" },
+      { "name": "Jenkins", "proficiency": "Advanced" },
+      { "name": "Git", "proficiency": "Expert" },
+      { "name": "React", "proficiency": "Advanced" },
+      { "name": "Datadog", "proficiency": "Advanced" }
     ],
     "soft_skills": [
-      "Technical Leadership",
-      "Mentoring",
-      "Architecture Design",
+      "Team Leadership",
+      "Mentoring & Coaching",
+      "Stakeholder Management",
+      "Technical Architecture",
+      "Project Management",
       "Problem Solving",
-      "Communication"
+      "Communication",
+      "Strategic Planning"
     ]
   },
   "certifications": [
     {
-      "name": "Certified Kubernetes Administrator (CKA)",
-      "issuer": "CNCF",
-      "date": "2022-06-15",
-      "expiryDate": "2025-06-15",
-      "credentialId": "LF-XXXX"
+      "name": "AWS Certified Solutions Architect Associate",
+      "issuer": "Amazon Web Services",
+      "date": "2019-01-15",
+      "expiryDate": "2022-01-15",
+      "credentialId": "AWS-SAA-2019",
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+    },
+    {
+      "name": "MicroStrategy Certified Engineering Principal",
+      "issuer": "MicroStrategy",
+      "date": "2015-06-01",
+      "expiryDate": null,
+      "credentialId": "MSTR-CEP-2015",
+      "url": "https://www.microstrategy.com/"
     }
   ],
   "languages": [
-    {
-      "language": "English",
-      "proficiency": "Native"
-    },
-    {
-      "language": "Portuguese",
-      "proficiency": "Native"
-    }
+    { "language": "Portuguese", "proficiency": "Native" },
+    { "language": "English", "proficiency": "Fluent" },
+    { "language": "Spanish", "proficiency": "Conversational" }
   ],
   "contact": {
-    "email": "carlos@carlosdamasio.com",
-    "phone": "",
-    "website": "https://www.carlosdamasio.com",
-    "linkedin": "https://linkedin.com/in/carlosdamasio",
+    "email": "carlosadamasio@gmail.com",
+    "phone": "+447534255518",
+    "website": "carlosdamasio.com",
+    "location": "London, UK",
+    "linkedin": "https://linkedin.com/in/cdamasio19",
     "github": "https://github.com/CarlosDamasio"
   }
 }

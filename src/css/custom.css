@@ -1,39 +1,38 @@
 .toast-dark {
-  background-color: #c0c9d7;
-  color: #4a4a4a;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: 6px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
 .offcanvas {
-  background-color: #1651b1; /* Dark background for the drawer */
-  opacity: 0.85;
-  color: #f8f8ff; /* Light text color */
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-right: 1px solid var(--border-primary);
 }
 
-/* Styling for the toast header */
 .toast-dark .toast-header {
-  background-color: #1651b1;
-  color: #ffffff;
-  border-bottom: 1px solid #c0c9d7;
-  padding: 10px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-primary);
+  padding: var(--spacing-lg);
+  font-weight: 600;
 }
 
-/* Styling for the toast body */
 .toast-dark .toast-body {
-  background: linear-gradient(to right, #c0c9d7, #e0e4eb, #c0c9d7);
-
-  color: #4a4a4a;
-  padding: 15px;
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  padding: var(--spacing-lg);
 }
 
 .toast-box {
   position: relative;
   width: 100%;
   max-width: 80%;
-  margin: 20px auto;
-  padding: 20px;
+  margin: var(--spacing-lg) auto;
+  padding: var(--spacing-lg);
 }
 
 .divider-container {
@@ -41,70 +40,129 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 20px 0;
+  margin: var(--spacing-xl) 0;
 }
 
 .divider {
   border: none;
-  height: 2px; /* Adjust the height of the divider */
+  height: 1px;
   width: 80%;
-  background: linear-gradient(to right, #415370, #e0e4eb, #415370);
+  background: var(--border-primary);
   position: relative;
 }
 
 .divider::after {
-  content: "";
-  display: block;
-  height: 4px; /* Height of the highlight */
-  width: 100%;
-  background: linear-gradient(to right, #c0c9d7, #e0e4eb, #c0c9d7);
-  position: absolute;
-  top: -1px;
-  left: 0;
-  z-index: 1;
-  pointer-events: none;
+  display: none;
 }
 
 .markdown-container {
-  background-color: #1e1e1e; /* Dark background color */
-  color: #ffffff; /* Light text color */
-  padding: 20px;
-  border-radius: 8px; /* Rounded corners */
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: var(--spacing-xl);
+  border-radius: 6px;
+  border: 1px solid var(--border-primary);
+  max-width: 100%;
+  margin: 0;
+  line-height: 1.8;
 }
 
 .markdown-container h1,
 .markdown-container h2,
 .markdown-container h3 {
-  color: #ff6347; /* Header color */
+  color: var(--text-primary);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.markdown-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-primary);
+  padding-bottom: var(--spacing-lg);
+}
+
+.markdown-container h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.markdown-container h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 .markdown-container a {
-  color: #1e90ff; /* Link color */
+  color: var(--accent-primary);
+  transition: color 0.2s ease;
 }
 
 .markdown-container a:hover {
+  color: var(--accent-secondary);
   text-decoration: underline;
 }
 
 .markdown-container blockquote {
-  border-left: 4px solid #333;
-  padding-left: 10px;
-  color: #999;
+  border-left: 4px solid var(--accent-primary);
+  padding-left: var(--spacing-lg);
+  margin-left: 0;
+  color: var(--text-secondary);
+  font-style: italic;
 }
 
 .markdown-container code {
-  background-color: #333;
-  padding: 2px 4px;
+  background-color: var(--bg-tertiary);
+  color: var(--accent-primary);
+  padding: 2px 6px;
   border-radius: 4px;
-  color: #f8f8f2;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
 }
 
 .markdown-container pre {
-  background-color: #333;
-  padding: 10px;
-  border-radius: 4px;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-primary);
+  border-radius: 6px;
+  padding: var(--spacing-lg);
   overflow-x: auto;
+  margin: var(--spacing-lg) 0;
+}
+
+.markdown-container pre code {
+  background-color: transparent;
+  color: var(--text-primary);
+  padding: 0;
+}
+
+.markdown-container ul,
+.markdown-container ol {
+  margin-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.markdown-container li {
+  margin-bottom: var(--spacing-md);
+  color: var(--text-secondary);
+}
+
+.markdown-container table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: var(--spacing-lg) 0;
+}
+
+.markdown-container th,
+.markdown-container td {
+  border: 1px solid var(--border-primary);
+  padding: var(--spacing-md);
+  text-align: left;
+}
+
+.markdown-container th {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.markdown-container tr:hover {
+  background-color: var(--bg-tertiary);
 }

@@ -2,29 +2,29 @@
   position: relative;
   display: flex;
   gap: 2rem;
-  padding: 1.5rem;
-  background: var(--background-secondary, #ffffff);
-  border-radius: 8px;
-  border: 1px solid var(--border-color, #e0e0e0);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 1.25rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  border: 1px solid var(--border-primary);
+  transition: all 0.2s ease;
   margin-bottom: 1rem;
   outline: none;
 }
 
 .entry:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-color: var(--primary-color, #0366d6);
-  transform: translateX(4px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.1);
 }
 
 .entry:focus-visible {
-  outline: 2px solid var(--primary-color, #0366d6);
+  outline: 2px solid var(--accent-primary);
   outline-offset: 2px;
 }
 
 .entry.expanded {
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  background: var(--bg-secondary);
+  border-color: var(--accent-primary);
+  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.15);
 }
 
 /* Timeline */
@@ -38,32 +38,32 @@
 }
 
 .dot {
-  width: 16px;
-  height: 16px;
-  background: var(--primary-color, #0366d6);
-  border: 3px solid white;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-primary);
+  border: 2px solid var(--bg-primary);
   border-radius: 50%;
-  box-shadow: 0 0 0 3px var(--primary-color, #0366d6);
-  transition: all 0.3s ease;
+  box-shadow: 0 0 0 2px var(--border-primary);
+  transition: all 0.2s ease;
   flex-shrink: 0;
 }
 
 .entry:hover .dot {
-  width: 20px;
-  height: 20px;
-  box-shadow: 0 0 0 4px var(--accent-color, #ffd700);
+  width: 14px;
+  height: 14px;
+  box-shadow: 0 0 0 3px var(--accent-primary);
 }
 
 .line {
   flex: 1;
-  width: 2px;
-  background: var(--border-color, #e0e0e0);
+  width: 1px;
+  background: var(--border-primary);
   margin-top: 0.5rem;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
 }
 
 .entry:hover .line {
-  background: var(--primary-color, #0366d6);
+  background: var(--accent-primary);
 }
 
 .entry:last-child .line {
