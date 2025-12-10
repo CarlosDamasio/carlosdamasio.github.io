@@ -26,6 +26,14 @@ const DynamicDrawer = () => {
             <NavItem to="About">About</NavItem>
           </Nav.Link>
         </NavList.Group>
+        <NavList.Group title="Professional">
+          <Nav.Link onClick={handleClose}>
+            <NavItem to="CV">Curriculum Vitae</NavItem>
+          </Nav.Link>
+          <Nav.Link onClick={handleClose}>
+            <NavItem to="Projects">Projects</NavItem>
+          </Nav.Link>
+        </NavList.Group>
         <NavList.Group title="Career">
           <Nav.Link onClick={handleClose}>
             <NavItem to="PlayStation">
@@ -43,17 +51,6 @@ const DynamicDrawer = () => {
             <NavItem to="Education">Education</NavItem>
           </Nav.Link>
         </NavList.Group>
-        <NavList.Group title="Projects">
-          <Nav.Link onClick={handleClose}>
-            <NavItem to="CarlosDamasio">CarlosDamasio</NavItem>
-          </Nav.Link>
-          <Nav.Link onClick={handleClose}>
-            <NavItem to="Solvent">Solvent.Life</NavItem>
-          </Nav.Link>
-          <Nav.Link onClick={handleClose}>
-            <NavItem to="Miscellaneous">Misc</NavItem>
-          </Nav.Link>
-        </NavList.Group>
       </NavList>
     </>
   );
@@ -67,7 +64,7 @@ const DynamicDrawer = () => {
         aria-label="Menu"
         icon={ThreeBarsIcon}
         onClick={handleShow}
-        sx={{ bg: "#1651b1" }}
+        sx={{ bg: "#58a6ff" }}
       ></IconButton>
 
       <Offcanvas show={show} onHide={handleClose}>
