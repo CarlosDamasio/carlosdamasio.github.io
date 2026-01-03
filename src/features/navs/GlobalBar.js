@@ -1,7 +1,7 @@
 import avatar from "./../../assets/avatar.svg";
 import github from "./../../assets/github-white.svg";
 import linkedin from "./../../assets/linkedin.svg";
-import curriculum from "./../../data/CV_Carlos_Damasio_2024_06.docx";
+import curriculum from "./../../data/CV_Carlos_Damasio_2026_01.docx";
 import { AiOutlineFileWord } from "react-icons/ai";
 import { Avatar, Header, Octicon, Tooltip } from "@primer/react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
@@ -23,7 +23,7 @@ function HeaderLink({ to, children }) {
 
 function GlobalBar() {
   return (
-    <Header sx={{ overflow: "auto" }}>
+    <Header >
       <Header.Item>
         <DynamicDrawer />
       </Header.Item>
@@ -50,7 +50,7 @@ function GlobalBar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Tooltip aria-label="CV" direction="se">
+          <Tooltip aria-label="CV Download" direction="se">
             <Octicon
               icon={AiOutlineFileWord}
               color="#d5d9e6"
@@ -66,7 +66,7 @@ function GlobalBar() {
             rel="noopener noreferrer"
           >
             <Avatar
-              alt="linkedin"
+              alt="github"
               src={github}
               size="25"
               sx={{ mr: 2, boxShadow: "0px 0px #888888" }}

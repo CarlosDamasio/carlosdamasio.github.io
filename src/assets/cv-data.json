@@ -1,0 +1,160 @@
+{
+  "personalInfo": {
+    "name": "Carlos Damasio",
+    "title": "Lead Platform Engineer",
+    "pronouns": "He/Him",
+    "dateOfBirth": "1987-08-19",
+    "nationality": "Portuguese",
+    "email": "carlosadamasio@gmail.com",
+    "phone": "+447534255518",
+    "website": "carlosdamasio.com",
+    "location": "London, UK"
+  },
+  "professionalSummary": "Lead Platform Engineer at the Bank of England with over 15 years of experience in building robust, scalable infrastructure and data solutions. Specialised in cloud architecture, infrastructure as code, platform engineering. Proven track record across diverse industries including financial services, gaming, public administration, and telecommunications and across multiple countries: Angola, Brazil, Portugal, and the United Kingdom.",
+  "education": [
+    {
+      "institution": "Instituto Superior de Ciências do Trabalho e da Empresa – ISCTE-IUL",
+      "location": "Lisbon, Portugal",
+      "degree": "BSc in Computer Science and Business Administration",
+      "field": "Computer Science",
+      "graduationDate": "2011-06-30",
+      "startDate": "2006-09-01",
+      "description": "BSc in Computer Science and Business Administration"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Bank of England",
+      "companyShort": "BankOfEngland",
+      "jobTitle": "Lead Platform Engineer",
+      "startDate": "2024-11-11",
+      "endDate": null,
+      "isCurrentRole": true,
+      "location": "London, UK",
+      "description": "Leading platform engineering initiatives focused on CI/CD, Observability and Developer Platform",
+      "responsibilities": [
+        "Deployed multiple implementations of self-hosted GitHub Runners (Windows and Linux) leveraging AKS and VMSS for scalable CI/CD pipelines",
+        "Implemented and managed observability stacks using Grafana and Prometheus for infrastructure and application monitoring",
+        "Developed various Prometheus exporters to enhance monitoring capabilities across services",
+        "Developed custom FastAPI applications to support internal tooling and automation needs",
+        "Establish best practices for infrastructure as code, observability and Python development across engineering teams"
+      ],
+      "technologies": ["GitHub Runners", "GitHub Actions", "Kubernetes", "AKS", "Docker", "Terraform", "Packer", "Azure", "Python", "Linux", "Grafana", "Prometheus", "FastAPI"]
+    },
+    {
+      "company": "Sony Interactive Entertainment Europe",
+      "companyShort": "Sony",
+      "jobTitle": "Senior Platform Engineer",
+      "startDate": "2019-07-01",
+      "endDate": "2024-10-31",
+      "isCurrentRole": false,
+      "location": "London, UK",
+      "description": "Transformed Analytics Infrastructure to Infrastructure as Code approach, developed CI/CD pipelines, and deployed custom tools on AWS",
+      "responsibilities": [
+        "Transformed what was essentially a lift and shift from the on-premises Infrastructure to an Infrastructure as Code approach",
+        "Developed and deployed CI/CD pipelines for the Analytics Apps including AMI creation, Docker image creation, Python based APIs, React frontends, various types of Infrastructure (e.g. databases, load balancers, serverless architecture with lambda functions, auto scaling groups)",
+        "Developed and deployed multiple custom tools and apps on AWS to enhance and support the Analytics Apps, e.g. SQL Scheduler, Cross Tool User Management portal, Unified Tool usage data pipeline",
+        "Migrated our applications from Windows servers to Linux (AML2023), refactored and automated the various needed configurations so all the components are up and running on a Linux distribution"
+      ],
+      "technologies": ["Terraform", "Cloudformation", "Ansible", "Packer", "Linux", "Windows", "Python", "Golang", "NodeJS", "Nginx", "Tomcat", "React", "Docker", "Jenkins", "AWS", "MicroStrategy", "Tableau", "Snowflake", "Datadog"]
+    },
+    {
+      "company": "Sony Interactive Entertainment Europe",
+      "companyShort": "Sony",
+      "jobTitle": "Senior Business Intelligence Engineer",
+      "startDate": "2016-08-01",
+      "endDate": "2019-07-31",
+      "isCurrentRole": false,
+      "location": "London, UK",
+      "description": "Led report and dashboard development, data engineering, and mentored junior developers",
+      "responsibilities": [
+        "Report and Dashboard development",
+        "Data Engineering",
+        "Requirements Gathering and Analysis",
+        "Business User Guidance and mentoring junior developers"
+      ],
+      "technologies": ["MicroStrategy", "Tableau", "IBM Netezza", "IBM InfoSphere Data Architect", "SQL", "Python"]
+    },
+    {
+      "company": "Novabase Business Solutions",
+      "companyShort": "Novabase",
+      "jobTitle": "Business Intelligence Consultant",
+      "startDate": "2011-09-01",
+      "endDate": "2016-08-31",
+      "isCurrentRole": false,
+      "location": "Lisbon, Portugal",
+      "description": "Consulted on multiple Business Intelligence projects across various industries and countries",
+      "responsibilities": [
+        "Worked in multiple Business Intelligence projects across various industries and countries",
+        "Development of Vodafone Data Warehouse Group Solution - ETL development, tasks estimation, follow and validate work from junior developers",
+        "Managing the Reporting Team at Movicel - Reports and Dashboards development, Servers and Tool administration, Analytics Platform road map specification, Development process specification, business users and developers training"
+      ],
+      "technologies": ["MicroStrategy", "Tableau", "ETL", "Data Warehouse", "IBM Technologies", "SQL", "Python"]
+    }
+  ],
+  "skills": {
+    "languages": [
+      { "name": "Python", "proficiency": "Expert" },
+      { "name": "Golang", "proficiency": "Advanced" },
+      { "name": "SQL", "proficiency": "Expert" },
+      { "name": "JavaScript/NodeJS", "proficiency": "Advanced" },
+      { "name": "Bash/Shell", "proficiency": "Advanced" }
+    ],
+    "platforms": [
+      { "name": "AWS", "proficiency": "Expert" },
+      { "name": "Linux", "proficiency": "Expert" },
+      { "name": "Docker", "proficiency": "Expert" },
+      { "name": "Kubernetes", "proficiency": "Advanced" },
+      { "name": "MicroStrategy", "proficiency": "Expert" },
+      { "name": "Tableau", "proficiency": "Advanced" },
+      { "name": "Snowflake", "proficiency": "Advanced" }
+    ],
+    "tools": [
+      { "name": "Terraform", "proficiency": "Expert" },
+      { "name": "CloudFormation", "proficiency": "Advanced" },
+      { "name": "Ansible", "proficiency": "Advanced" },
+      { "name": "Jenkins", "proficiency": "Advanced" },
+      { "name": "Git", "proficiency": "Expert" },
+      { "name": "React", "proficiency": "Advanced" },
+      { "name": "Datadog", "proficiency": "Advanced" }
+    ],
+    "soft_skills": [
+      "Team Leadership",
+      "Mentoring & Coaching",
+      "Stakeholder Management",
+      "Project Management",
+      "Communication"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect Associate",
+      "issuer": "Amazon Web Services",
+      "date": "2019-01-15",
+      "expiryDate": "2022-01-15",
+      "credentialId": "AWS-SAA-2019",
+      "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+    },
+    {
+      "name": "MicroStrategy Certified Engineering Principal",
+      "issuer": "MicroStrategy",
+      "date": "2015-06-01",
+      "expiryDate": null,
+      "credentialId": "MSTR-CEP-2015",
+      "url": "https://www.microstrategy.com/"
+    }
+  ],
+  "languages": [
+    { "language": "Portuguese", "proficiency": "Native" },
+    { "language": "English", "proficiency": "Fluent" },
+    { "language": "Spanish", "proficiency": "Conversational" }
+  ],
+  "contact": {
+    "email": "carlosadamasio@gmail.com",
+    "phone": "+447534255518",
+    "website": "carlosdamasio.com",
+    "location": "London, UK",
+    "linkedin": "https://linkedin.com/in/cdamasio19",
+    "github": "https://github.com/CarlosDamasio"
+  }
+}

@@ -12,10 +12,11 @@ const DynamicSideBar = () => {
       <NavList.Group>
         <NavItem to="Home">Home</NavItem>
       </NavList.Group>
-      <NavList.Group>
-        <NavItem to="About">About</NavItem>
-      </NavList.Group>
       <NavList.Group title="Career">
+        <NavItem to="BankOfEngland">
+          Bank of England
+          <NavList.TrailingVisual>2024</NavList.TrailingVisual>
+        </NavItem>
         <NavItem to="PlayStation">
           PlayStation
           <NavList.TrailingVisual>2016</NavList.TrailingVisual>
@@ -28,8 +29,6 @@ const DynamicSideBar = () => {
       </NavList.Group>
       <NavList.Group title="Projects">
         <NavItem to="CarlosDamasio">CarlosDamasio</NavItem>
-        <NavItem to="Solvent">Solvent.Life</NavItem>
-        <NavItem to="Miscellaneous">Misc</NavItem>
       </NavList.Group>
     </NavList>
   );
