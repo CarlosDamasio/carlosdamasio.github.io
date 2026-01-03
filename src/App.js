@@ -1,7 +1,7 @@
 import { BaseStyles, Box, PageLayout } from "@primer/react";
 import { useEffect } from "react";
-import GlobalBar from "./features/Bars/GlobalBar";
-import DynamicSideBar from "./features/Bars/DynamicSideBar";
+import GlobalBar from "./features/navs/GlobalBar";
+import DynamicSideBar from "./features/navs/DynamicSideBar";
 import Home from "./features/home/Home";
 import BankOfEngland from "./features/career/BankOfEngland";
 import PlayStation from "./features/career/PlayStation";
