@@ -1,7 +1,7 @@
 import avatar from "./../../assets/avatar.svg";
 import github from "./../../assets/github-white.svg";
 import linkedin from "./../../assets/linkedin.svg";
-import curriculum from "./../../data/CV_Carlos_Damasio_2026_01.docx";
+import curriculum from "./../../data/CV_Carlos_Damasio_2026_01.pages";
 import { AiOutlineFileWord } from "react-icons/ai";
 import { Avatar, Header, Octicon, Tooltip } from "@primer/react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
