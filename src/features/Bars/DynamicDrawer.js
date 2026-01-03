@@ -21,24 +21,17 @@ const DynamicDrawer = () => {
             <NavItem to="Home">Home</NavItem>
           </Nav.Link>
         </NavList.Group>
-        <NavList.Group>
-          <Nav.Link onClick={handleClose}>
-            <NavItem to="About">About</NavItem>
-          </Nav.Link>
-        </NavList.Group>
-        <NavList.Group title="Professional">
-          <Nav.Link onClick={handleClose}>
-            <NavItem to="CV">Curriculum Vitae</NavItem>
-          </Nav.Link>
-          <Nav.Link onClick={handleClose}>
-            <NavItem to="Projects">Projects</NavItem>
-          </Nav.Link>
-        </NavList.Group>
         <NavList.Group title="Career">
+          <Nav.Link onClick={handleClose}>
+            <NavItem to="BankOfEngland">
+              Bank of England
+              <NavList.TrailingVisual>2024</NavList.TrailingVisual>
+            </NavItem>
+          </Nav.Link>
           <Nav.Link onClick={handleClose}>
             <NavItem to="PlayStation">
               PlayStation
-              <NavList.TrailingVisual>2016</NavList.TrailingVisual>
+              <NavList.TrailingVisual>2019</NavList.TrailingVisual>
             </NavItem>
           </Nav.Link>
           <Nav.Link onClick={handleClose}>
@@ -51,6 +44,9 @@ const DynamicDrawer = () => {
             <NavItem to="Education">Education</NavItem>
           </Nav.Link>
         </NavList.Group>
+          <NavList.Group title="Projects">
+        <NavItem to="CarlosDamasio">CarlosDamasio</NavItem>
+      </NavList.Group>
       </NavList>
     </>
   );
@@ -64,7 +60,7 @@ const DynamicDrawer = () => {
         aria-label="Menu"
         icon={ThreeBarsIcon}
         onClick={handleShow}
-        sx={{ bg: "#58a6ff" }}
+        sx={{ bg: "var(--accent-primary)" }}
       ></IconButton>
 
       <Offcanvas show={show} onHide={handleClose}>

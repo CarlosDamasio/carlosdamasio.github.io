@@ -27,7 +27,6 @@ const ExperienceEntry = ({
     location,
     description,
     responsibilities = [],
-    achievements = [],
     technologies = [],
     imageUrl,
     companyWebsite
@@ -170,23 +169,6 @@ const ExperienceEntry = ({
                   {responsibilities.map((resp, idx) => (
                     <li key={`resp-${idx}`}>
                       {sanitizeText(resp)}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {/* Achievements */}
-            {achievements && achievements.length > 0 && (
-              <div className={styles.section}>
-                <h5 className={styles.sectionTitle}>Key Achievements</h5>
-                <ul className={styles.achievementsList}>
-                  {achievements.map((achievement, idx) => (
-                    <li key={`achievement-${idx}`} className={styles.achievement}>
-                      <span className={styles.checkmark} aria-hidden="true">
-                        ✓
-                      </span>
-                      {sanitizeText(achievement)}
                     </li>
                   ))}
                 </ul>

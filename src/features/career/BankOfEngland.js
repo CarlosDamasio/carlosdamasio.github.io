@@ -3,9 +3,9 @@ import { FeedTagIcon } from "@primer/octicons-react";
 import cvData from "../../data/cv-data.json";
 import "../../css/custom.css";
 
-function Novabase() {
+function BankOfEngland() {
   const { experience = [] } = cvData;
-  const novabaseRoles = experience.filter((exp) => exp.companyShort === "Novabase");
+  const boeRoles = experience.filter((exp) => exp.companyShort === "BankOfEngland");
 
   const formatDate = (startDate, endDate) => {
     const start = new Date(startDate).toLocaleDateString("en-US", {
@@ -24,14 +24,14 @@ function Novabase() {
   return (
     <Box sx={{ p: 4 }}>
       <Text as="h1" sx={{ fontSize: 5, fontWeight: "var(--font-weight-bold)", color: "var(--accent-primary)", mb: 2 }}>
-        Novabase Business Solutions
+        Bank of England
       </Text>
       <Text as="p" sx={{ color: "var(--text-secondary)", mb: 6 }}>
-        Business Intelligence & Data Warehouse Solutions
+        Self-hosted GitHub Runners, Observability Infrastructure & Cloud-Native Platform Engineering
       </Text>
 
       <Timeline clipSidebar="true">
-        {novabaseRoles.map((role, idx) => (
+        {boeRoles.map((role, idx) => (
           <Timeline.Item key={idx}>
             <Timeline.Badge>
               <Octicon
@@ -61,7 +61,7 @@ function Novabase() {
                   </Text>
                 )}
               </Box>
-              <Text sx={{ color: "var(--text-secondary)", mb: 3, fontSize: 1 }}>
+              <Text sx={{ color: "var(--text-secondary)", mb: 2, fontSize: 1 }}>
                 {role.location} • {formatDate(role.startDate, role.endDate)}
               </Text>
               <p>
@@ -69,7 +69,6 @@ function Novabase() {
                 {role.description}
               </Text>
               </p>
-
               {role.responsibilities && role.responsibilities.length > 0 && (
                 <Box sx={{ mb: 3 }}>
                   <Text sx={{ fontWeight: "var(--font-weight-bold)", color: "var(--text-secondary)", mb: 2 }}>
@@ -113,4 +112,4 @@ function Novabase() {
   );
 }
 
-export default Novabase;
+export default BankOfEngland;

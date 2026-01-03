@@ -2,7 +2,7 @@ import { Octicon, Text, Timeline, Box } from "@primer/react";
 import "../../css/custom.css";
 import { FeedTagIcon } from "@primer/octicons-react";
 import Divider from "../../components/Divider";
-import cvData from "../../assets/cv-data.json";
+import cvData from "../../data/cv-data.json";
 
 function Education() {
   const { education = [], certifications = [] } = cvData;
@@ -17,26 +17,29 @@ function Education() {
 
   return (
     <Box sx={{ p: 4 }}>
+      <Text as="h1" sx={{ fontSize: 5, fontWeight: "var(--font-weight-bold)", color: "var(--accent-primary)", mb: 2 }}>
+        Education & Certifications
+      </Text>
+
       <Box sx={{ mb: 6 }}>
-        <Text as="h2" sx={{ fontSize: 5, fontWeight: "bold", color: "#58a6ff", mb: 4 }}>
+        <Text as="h2" sx={{ fontSize: 3, fontWeight: "var(--font-weight-bold)", color: "var(--accent-primary)", mb: 4 }}>
           Academic Qualifications
         </Text>
         <Timeline clipSidebar="true">
           {education.map((edu, idx) => (
             <Timeline.Item key={idx}>
               <Timeline.Badge>
-                <Octicon icon={FeedTagIcon} size={32} color="#58a6ff" />
+                <Octicon icon={FeedTagIcon} size={32} color="var(--accent-primary)" />
               </Timeline.Badge>
-              <Timeline.Body sx={{ color: "text.primary" }}>
-                <Text sx={{ fontWeight: "bold", color: "#58a6ff", mb: 1 }}>
+              <Timeline.Body sx={{ color: "var(--text-primary)" }}>
+                <Text sx={{ fontWeight: "var(--font-weight-bold)", color: "var(--accent-primary)", fontSize: 2, mb: 1 }}>
                   {edu.degree}
                 </Text>
-                <Text sx={{ color: "text.secondary", mb: 1 }}>
-                  {edu.institution}
+                <p>
+                <Text sx={{ color: "var(--text-secondary)", mb: 2, fontSize: 1 }}>
+                  {edu.institution}  {edu.location} • Graduated {formatDate(edu.graduationDate)}
                 </Text>
-                <Text sx={{ color: "text.secondary", fontSize: 0 }}>
-                  {edu.location} • Graduated {formatDate(edu.graduationDate)}
-                </Text>
+                </p>
               </Timeline.Body>
             </Timeline.Item>
           ))}
@@ -46,26 +49,24 @@ function Education() {
       <Divider />
 
       <Box sx={{ mt: 6 }}>
-        <Text as="h2" sx={{ fontSize: 5, fontWeight: "bold", color: "#58a6ff", mb: 4 }}>
-          Certifications
+        <Text as="h2" sx={{ fontSize: 3, fontWeight: "var(--font-weight-bold)", color: "var(--accent-primary)", mb: 4 }}>
+          Professional Certifications
         </Text>
         <Timeline clipSidebar="true">
           {certifications.map((cert, idx) => (
             <Timeline.Item key={idx}>
               <Timeline.Badge>
-                <Octicon icon={FeedTagIcon} size={32} color="#238636" />
+                <Octicon icon={FeedTagIcon} size={32} color="var(--accent-primary)" />
               </Timeline.Badge>
-              <Timeline.Body sx={{ color: "text.primary" }}>
-                <Text sx={{ fontWeight: "bold", color: "#238636", mb: 1 }}>
+              <Timeline.Body sx={{ color: "var(--text-primary)" }}>
+                <Text sx={{ fontWeight: "var(--font-weight-bold)", color: "var(--accent-primary)", fontSize: 2, mb: 1 }}>
                   {cert.name}
                 </Text>
-                <Text sx={{ color: "text.secondary", mb: 1 }}>
-                  {cert.issuer}
+                <p>
+                <Text sx={{ color: "var(--text-secondary)", mb: 2, fontSize: 1 }}>
+                  {cert.issuer} Issued {formatDate(cert.date)}
                 </Text>
-                <Text sx={{ color: "text.secondary", fontSize: 0 }}>
-                  Issued {formatDate(cert.date)}
-                  {cert.expiryDate && ` • Expires ${formatDate(cert.expiryDate)}`}
-                </Text>
+                </p>
               </Timeline.Body>
             </Timeline.Item>
           ))}

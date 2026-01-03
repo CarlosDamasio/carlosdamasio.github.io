@@ -27,6 +27,7 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "preinstall": "npx only-allow yarn",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -51,7 +52,8 @@
   },
   "devDependencies": {
     "eslint-plugin-primer-react": "^4.0.0",
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "only-allow": "^1.2.2"
   },
   "packageManager": "yarn@4.3.1"
 }

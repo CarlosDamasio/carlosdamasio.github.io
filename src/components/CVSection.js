@@ -119,15 +119,6 @@ const CVSection = ({ cvData, expanded = false, onToggle }) => {
                         {sanitizeText(exp.description)}
                       </p>
                     )}
-                    {exp.achievements && exp.achievements.length > 0 && (
-                      <ul className={styles.achievements}>
-                        {exp.achievements.map((achievement, idx) => (
-                          <li key={`achievement-${idx}`}>
-                            {sanitizeText(achievement)}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
                   </div>
                 ))}
               </div>

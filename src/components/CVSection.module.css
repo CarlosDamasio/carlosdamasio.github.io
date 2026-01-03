@@ -2,14 +2,15 @@
   width: 100%;
   background: var(--bg-secondary);
   border: 1px solid var(--border-primary);
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .cvSection.expanded {
   border-color: var(--accent-primary);
-  box-shadow: 0 4px 12px rgba(88, 166, 255, 0.1);
+  box-shadow: var(--shadow-accent);
+  background: var(--bg-tertiary);
 }
 
 .header {
@@ -19,6 +20,12 @@
   padding: 1.25rem;
   border-bottom: 1px solid var(--border-primary);
   background: var(--bg-tertiary);
+  transition: background 0.2s ease;
+}
+
+.cvSection.expanded .header {
+  background: var(--bg-tertiary);
+  border-bottom-color: var(--accent-primary);
 }
 
 .title {
@@ -40,10 +47,10 @@
 .toggleButton {
   background: transparent;
   color: var(--accent-primary);
-  border: 1px solid var(--accent-primary);
+  border: 1px solid var(--border-light);
   width: 36px;
   height: 36px;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 1.25rem;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -57,6 +64,7 @@
 .toggleButton:hover {
   background: var(--accent-primary);
   color: var(--bg-primary);
+  border-color: var(--accent-primary);
 }
 
 .toggleButton:focus {
@@ -70,15 +78,17 @@
 
 .preview {
   padding: 1rem 1.25rem;
-  background: var(--bg-tertiary);
+  background: var(--bg-secondary);
   color: var(--text-secondary);
   text-align: center;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
+  border-top: 1px solid var(--border-primary);
 }
 
 .preview:hover {
-  background: var(--border-primary);
+  background: var(--bg-tertiary);
+  color: var(--accent-light);
 }
 
 .previewText {

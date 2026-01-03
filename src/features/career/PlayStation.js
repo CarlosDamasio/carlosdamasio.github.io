@@ -1,6 +1,6 @@
 import { Octicon, Text, Timeline, Box } from "@primer/react";
 import { FeedTagIcon } from "@primer/octicons-react";
-import cvData from "../../assets/cv-data.json";
+import cvData from "../../data/cv-data.json";
 import "../../css/custom.css";
 
 function PlayStation() {
@@ -23,10 +23,10 @@ function PlayStation() {
 
   return (
     <Box sx={{ p: 4 }}>
-      <Text as="h1" sx={{ fontSize: 5, fontWeight: "bold", color: "#58a6ff", mb: 2 }}>
+      <Text as="h1" sx={{ fontSize: 5, fontWeight: "var(--font-weight-bold)", color: "var(--accent-primary)", mb: 2 }}>
         Sony Interactive Entertainment Europe
       </Text>
-      <Text as="p" sx={{ color: "text.secondary", mb: 6 }}>
+      <Text as="p" sx={{ color: "var(--text-secondary)", mb: 6 }}>
         Analytics Infrastructure & Business Intelligence
       </Text>
 
@@ -37,44 +37,46 @@ function PlayStation() {
               <Octicon
                 icon={FeedTagIcon}
                 size={32}
-                color={role.isCurrentRole ? "#238636" : "#58a6ff"}
+                color={role.isCurrentRole ? "var(--accent-primary)" : "var(--text-secondary)"}
               />
             </Timeline.Badge>
-            <Timeline.Body sx={{ color: "text.primary" }}>
+            <Timeline.Body sx={{ color: "var(--text-primary)" }}>
               <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 1 }}>
-                <Text sx={{ fontWeight: "bold", color: "#58a6ff", fontSize: 3 }}>
+                <Text sx={{ fontWeight: "var(--font-weight-bold)", color: "var(--accent-primary)", fontSize: 3 }}>
                   {role.jobTitle}
                 </Text>
                 {role.isCurrentRole && (
                   <Text
                     sx={{
-                      bg: "#238636",
-                      color: "#ffffff",
+                      bg: "var(--accent-primary)",
+                      color: "var(--bg-primary)",
                       px: 2,
                       py: 1,
-                      borderRadius: 2,
+                      borderRadius: "var(--radius-md)",
                       fontSize: 0,
-                      fontWeight: "bold",
+                      fontWeight: "var(--font-weight-bold)",
                     }}
                   >
                     Current
                   </Text>
                 )}
               </Box>
-              <Text sx={{ color: "text.secondary", mb: 2, fontSize: 1 }}>
+              <Text sx={{ color: "var(--text-secondary)", mb: 3, fontSize: 1 }}>
                 {role.location} • {formatDate(role.startDate, role.endDate)}
               </Text>
-              <Text sx={{ color: "text.primary", mb: 3 }}>
+              <p>
+              <Text sx={{ color: "var(--text-primary)", mb: 3 }}>
                 {role.description}
               </Text>
+              </p>
 
               {role.responsibilities && role.responsibilities.length > 0 && (
                 <Box sx={{ mb: 3 }}>
-                  <Text sx={{ fontWeight: "bold", color: "#8b949e", mb: 2 }}>
+                  <Text sx={{ fontWeight: "var(--font-weight-bold)", color: "var(--text-secondary)", mb: 2 }}>
                     Responsibilities
                   </Text>
-                  <ul style={{ color: "var(--color-text-secondary)", paddingLeft: "20px" }}>
-                    {role.responsibilities.slice(0, 4).map((resp, i) => (
+                  <ul style={{ color: "var(--text-secondary)", paddingLeft: "20px" }}>
+                    {role.responsibilities.slice().map((resp, i) => (
                       <li key={i} style={{ marginBottom: "8px" }}>
                         {resp}
                       </li>
@@ -85,17 +87,17 @@ function PlayStation() {
 
               {role.technologies && role.technologies.length > 0 && (
                 <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
-                  {role.technologies.slice(0, 8).map((tech, i) => (
+                  {role.technologies.slice().map((tech, i) => (
                     <Text
                       key={i}
                       sx={{
-                        bg: "#21262d",
-                        color: "#58a6ff",
+                        bg: "var(--bg-secondary)",
+                        color: "var(--accent-primary)",
                         px: 2,
                         py: 1,
-                        borderRadius: 1,
+                        borderRadius: "var(--radius-sm)",
                         fontSize: 0,
-                        border: "1px solid #30363d",
+                        border: "1px solid var(--border-primary)",
                       }}
                     >
                       {tech}

@@ -2,13 +2,11 @@ import { BaseStyles, Box, PageLayout } from "@primer/react";
 import { useEffect } from "react";
 import GlobalBar from "./features/Bars/GlobalBar";
 import DynamicSideBar from "./features/Bars/DynamicSideBar";
-import Myself from "./features/about/Myself";
 import Home from "./features/home/Home";
-import CV from "./features/career/CV";
+import BankOfEngland from "./features/career/BankOfEngland";
 import PlayStation from "./features/career/PlayStation";
 import Novabase from "./features/career/Novabase";
 import Education from "./features/career/Education";
-import Projects from "./features/projects/Projects";
 import MarkdownRenderer from "./components/MarkdownRenderer";
 import { initializeSecurity } from "./security";
 import { logEnvConfig } from "./utils/env";
@@ -53,19 +51,15 @@ function App() {
               sx={{
                 maxWidth: 1200,
                 width: "100%",
-                height: "100%",
-                maxHeight: 1200,
                 p: [4, 5, 6, 7],
-                mx: "auto ",
+                mx: "auto",
                 color: "text.primary",
               }}
             >
               <Routes>
                 <Route path="/" element={<Navigate to="Home" />} />
                 <Route path="Home" element={<Home />} />
-                <Route path="About" element={<Myself />} />
-                <Route path="CV" element={<CV />} />
-                <Route path="Projects" element={<Projects />} />
+                <Route path="BankOfEngland" element={<BankOfEngland />} />
                 <Route
                   path="CarlosDamasio"
                   element={

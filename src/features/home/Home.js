@@ -1,9 +1,8 @@
 import { Box, Text, Button, Link } from "@primer/react";
 import Image from "react-bootstrap/Image";
-import { Link as RouterLink } from "react-router-dom";
 import { Octicon } from "@primer/react";
 import { FeedTagIcon } from "@primer/octicons-react";
-import cvData from "../../assets/cv-data.json";
+import cvData from "../../data/cv-data.json";
 
 function Home() {
   return (
@@ -40,9 +39,10 @@ function Home() {
               as="h1"
               sx={{
                 fontSize: 6,
-                fontWeight: "bold",
+                fontWeight: "var(--font-weight-bold)",
                 margin: 0,
-                lineHeight: 1.2,
+                lineHeight: "var(--line-height-tight)",
+                color: "var(--accent-primary)",
               }}
             >
               {cvData.personalInfo?.title || "Senior Software Engineer"}
@@ -51,92 +51,54 @@ function Home() {
               as="p"
               sx={{
                 fontSize: 2,
-                color: "text.secondary",
+                color: "var(--text-secondary)",
                 margin: 0,
                 marginTop: 1,
               }}
             >
-              Analytics Platform & Business Intelligence Expert
+              Platform Engineering | Cloud Computing | Analytics & Developer Platforms
             </Text>
           </Box>
 
           {/* Professional Summary */}
-          <Text as="p" sx={{ fontSize: 1, lineHeight: 1.6 }}>
+          <Text as="p" sx={{ fontSize: 1, lineHeight: "var(--line-height-relaxed)", color: "var(--text-primary)" }}>
             {cvData.professionalSummary}
           </Text>
 
           {/* Current Role Highlight */}
-          <Box sx={{ p: 2, bg: "canvas.subtle", borderRadius: 2, borderLeft: "4px solid", borderColor: "accent.fg" }}>
-            <Text as="p" sx={{ fontSize: 0, fontWeight: "bold", margin: 0, mb: 1 }}>
+          <Box sx={{ p: 2, bg: "var(--bg-secondary)", borderRadius: "var(--radius-md)", borderLeft: "4px solid", borderColor: "var(--accent-primary)" }}>
+            <Text as="p" sx={{ fontSize: 0, fontWeight: "var(--font-weight-bold)", margin: 0, mb: 1, color: "var(--text-secondary)" }}>
               Current Role
             </Text>
-            <Text as="p" sx={{ fontSize: 0, margin: 0, lineHeight: 1.5 }}>
-              <strong>{cvData.experience[0]?.jobTitle}</strong> at {cvData.experience[0]?.company} ({cvData.experience[0]?.location})<br />
+            <Text as="p" sx={{ fontSize: 0, margin: 0, lineHeight: "var(--line-height-normal)", color: "var(--text-primary)" }}>
+              <strong style={{ color: "var(--accent-primary)" }}>{cvData.experience[0]?.jobTitle}</strong> at {cvData.experience[0]?.company} ({cvData.experience[0]?.location})<br />
               {cvData.experience[0]?.description}
             </Text>
           </Box>
 
           {/* Key Expertise Areas */}
           <Box>
-            <Text as="p" sx={{ fontWeight: "bold", fontSize: 1, mb: 1 }}>
+            <Text as="p" sx={{ fontWeight: "var(--font-weight-bold)", fontSize: 1, mb: 1, color: "var(--accent-primary)" }}>
               Key Expertise:
             </Text>
             <Box sx={{ display: "flex", gap: 1, flexWrap: "wrap" }}>
-              {cvData.experience[0]?.technologies?.slice(0, 6).map((skill) => (
+              {cvData.experience[0]?.technologies?.slice().map((skill) => (
                 <Box
                   key={skill}
                   sx={{
-                    bg: "canvas.subtle",
+                    bg: "var(--bg-secondary)",
                     px: 2,
                     py: 1,
-                    borderRadius: 2,
+                    borderRadius: "var(--radius-md)",
                     fontSize: 0,
+                    color: "var(--accent-primary)",
+                    border: "1px solid var(--border-primary)",
                   }}
                 >
                   {skill}
                 </Box>
               ))}
             </Box>
-          </Box>
-
-          {/* Call-to-Action Buttons */}
-          <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap", mt: 2 }}>
-            <Button
-              as={RouterLink}
-              to="/CV"
-              variant="primary"
-              sx={{ textDecoration: "none" }}
-            >
-              View CV
-            </Button>
-            <Button
-              as={RouterLink}
-              to="/Projects"
-              variant="default"
-              sx={{ textDecoration: "none" }}
-            >
-              See Projects
-            </Button>
-            <Button
-              as={Link}
-              href="https://www.linkedin.com/in/cdamasio19/"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="default"
-              sx={{ textDecoration: "none" }}
-            >
-              LinkedIn
-            </Button>
-            <Button
-              as={Link}
-              href="https://github.com/CarlosDamasio"
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="default"
-              sx={{ textDecoration: "none" }}
-            >
-              GitHub
-            </Button>
           </Box>
         </Box>
 
@@ -163,116 +125,118 @@ function Home() {
       </Box>
 
       {/* Career Timeline Overview */}
-      <Box width="100%" textAlign="left" mb={4} sx={{ borderTop: "1px solid", borderColor: "border.default", pt: 4 }}>
-        <Text as="h2" sx={{ fontSize: 3, fontWeight: "bold", mb: 3 }}>
+      <Box width="100%" textAlign="left" mb={4} sx={{ borderTop: "1px solid", borderColor: "var(--border-primary)", pt: 4 }}>
+        <Text as="h2" sx={{ fontSize: 3, fontWeight: "var(--font-weight-bold)", mb: 3, color: "var(--accent-primary)" }}>
           Professional Journey
         </Text>
         
-        {/* PlayStation Section */}
+        {/* Bank of England - Current Role */}
         <Box mb={4}>
           <Box sx={{ display: "flex", gap: 2, alignItems: "flex-start", mb: 2 }}>
-            <Octicon icon={FeedTagIcon} size={24} sx={{ color: "accent.fg", mt: 1 }} />
+            <Octicon icon={FeedTagIcon} size={24} sx={{ color: "var(--accent-primary)", mt: 1 }} />
             <Box>
-              <Text as="h3" sx={{ fontSize: 1, fontWeight: "bold", margin: 0 }}>
-                Senior Platform Engineer at Sony PlayStation
+              <Text as="h3" sx={{ fontSize: 1, fontWeight: "var(--font-weight-bold)", margin: 0, color: "var(--accent-primary)" }}>
+                Lead Platform Engineer at Bank of England
               </Text>
-              <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
-                London, UK • July 2019 to Present
+              <Text as="p" sx={{ fontSize: 0, color: "var(--text-secondary)", margin: 0 }}>
+                London, UK • November 2024 to Present
               </Text>
             </Box>
           </Box>
-          <Text as="p" sx={{ fontSize: 0, ml: 6, lineHeight: 1.6, color: "text.primary" }}>
-            Working as Senior Platform Engineer for the Analytics Platform team. My work focuses on hosting, 
-            managing and enhancing our Analytics tools stacks such as MicroStrategy, Tableau and Snowflake. 
-            Responsibilities include infrastructure management, platform optimization, and team mentoring.
+          <Text as="p" sx={{ fontSize: 0, ml: 6, lineHeight: "var(--line-height-relaxed)", color: "var(--text-primary)" }}>
+            Lead Platform Engineer focusing on the Developer Platform, particularly in CI/CD (GitHub Self-hosted Runners) and Observability stacks (Grafana/Prometheus). 
+            Developing integration and automation solutions to enhance developer experience and operational efficiency.
+            Architect containerised application deployments on Kubernetes and mentoring on Python and modern DevOps methodologies.
           </Text>
         </Box>
 
-        {/* Previous PlayStation Role */}
+        {/* Sony Senior Platform Engineer Role */}
         <Box mb={4}>
           <Box sx={{ display: "flex", gap: 2, alignItems: "flex-start", mb: 2 }}>
-            <Octicon icon={FeedTagIcon} size={24} sx={{ color: "text.secondary", mt: 1 }} />
+            <Octicon icon={FeedTagIcon} size={24} sx={{ color: "var(--text-secondary)", mt: 1 }} />
             <Box>
-              <Text as="h3" sx={{ fontSize: 1, fontWeight: "bold", margin: 0 }}>
-                Senior Business Intelligence Engineer at Sony PlayStation
+              <Text as="h3" sx={{ fontSize: 1, fontWeight: "var(--font-weight-bold)", margin: 0, color: "var(--accent-primary)" }}>
+                Senior Platform Engineer at Sony Interactive Entertainment
               </Text>
-              <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
+              <Text as="p" sx={{ fontSize: 0, color: "var(--text-secondary)", margin: 0 }}>
+                London, UK • July 2019 to October 2024
+              </Text>
+            </Box>
+          </Box>
+          <Text as="p" sx={{ fontSize: 0, ml: 6, lineHeight: "var(--line-height-relaxed)", color: "var(--text-primary)" }}>
+            Transformed the on premises Analytics Infrastructure to a cloud native architecture leveraging Infrastructure as Code. Developed CI/CD pipelines, 
+            deployed custom tools on AWS. 
+            Migrated applications from Windows to Linux.
+          </Text>
+        </Box>
+
+        {/* Sony Senior BI Engineer Role */}
+        <Box mb={4}>
+          <Box sx={{ display: "flex", gap: 2, alignItems: "flex-start", mb: 2 }}>
+            <Octicon icon={FeedTagIcon} size={24} sx={{ color: "var(--text-secondary)", mt: 1 }} />
+            <Box>
+              <Text as="h3" sx={{ fontSize: 1, fontWeight: "var(--font-weight-bold)", margin: 0, color: "var(--accent-primary)" }}>
+                Senior Business Intelligence Engineer at Sony Interactive Entertainment
+              </Text>
+              <Text as="p" sx={{ fontSize: 0, color: "var(--text-secondary)", margin: 0 }}>
                 London, UK • August 2016 to July 2019
               </Text>
             </Box>
           </Box>
-          <Text as="p" sx={{ fontSize: 0, ml: 6, lineHeight: 1.6, color: "text.primary" }}>
-            Developed dashboards and reporting solutions, built data pipelines and data structures. 
-            Mentored business users on extracting value from team products and managed business 
-            requirements for further enhancements.
+          <Text as="p" sx={{ fontSize: 0, ml: 6, lineHeight: "var(--line-height-relaxed)", color: "var(--text-primary)" }}>
+            Led report and dashboard development, data engineering, and mentored junior developers.
           </Text>
         </Box>
 
         {/* Novabase Experience Preview */}
         <Box>
           <Box sx={{ display: "flex", gap: 2, alignItems: "flex-start", mb: 2 }}>
-            <Octicon icon={FeedTagIcon} size={24} sx={{ color: "text.secondary", mt: 1 }} />
+            <Octicon icon={FeedTagIcon} size={24} sx={{ color: "var(--text-secondary)", mt: 1 }} />
             <Box>
-              <Text as="h3" sx={{ fontSize: 1, fontWeight: "bold", margin: 0 }}>
-                Business Intelligence Projects at Novabase
+              <Text as="h3" sx={{ fontSize: 1, fontWeight: "var(--font-weight-bold)", margin: 0, color: "var(--accent-primary)" }}>
+                Business Intelligence Consultant at Novabase
               </Text>
-              <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
-                Multiple countries • Various industries
+              <Text as="p" sx={{ fontSize: 0, color: "var(--text-secondary)", margin: 0 }}>
+                Multiple countries • 2011-2016
               </Text>
             </Box>
           </Box>
-          <Text as="p" sx={{ fontSize: 0, ml: 6, lineHeight: 1.6, color: "text.primary" }}>
+          <Text as="p" sx={{ fontSize: 0, ml: 6, lineHeight: "var(--line-height-relaxed)", color: "var(--text-primary)" }}>
             Worked on multiple Business Intelligence projects across various industries and countries including 
             Vodafone (UK) and Movicel (Angola). Led BI teams, managed reporting platforms, and oversaw ETL development.
           </Text>
         </Box>
-
-        {/* Link to see more */}
-        <Box sx={{ mt: 3, p: 2, bg: "canvas.subtle", borderRadius: 2 }}>
-          <Text as="p" sx={{ fontSize: 0, mb: 1 }}>
-            Want to see more details about my career journey and projects?
-          </Text>
-          <Button
-            as={RouterLink}
-            to="/Projects"
-            size="small"
-            variant="primary"
-            sx={{ textDecoration: "none" }}
-          >
-            Explore My Work
-          </Button>
-        </Box>
       </Box>
 
       {/* Education & Certifications */}
-      <Box width="100%" textAlign="left" mb={4} sx={{ borderTop: "1px solid", borderColor: "border.default", pt: 4 }}>
-        <Text as="h2" sx={{ fontSize: 3, fontWeight: "bold", mb: 3 }}>
+      <Box width="100%" textAlign="left" mb={4} sx={{ borderTop: "1px solid", borderColor: "var(--border-primary)", pt: 4 }}>
+        <Text as="h2" sx={{ fontSize: 3, fontWeight: "var(--font-weight-bold)", mb: 3, color: "var(--accent-primary)" }}>
           Education & Certifications
         </Text>
         
         <Box sx={{ display: "grid", gridTemplateColumns: ["1fr", "1fr 1fr"], gap: 3 }}>
           {/* Education */}
-          <Box sx={{ p: 2, bg: "canvas.subtle", borderRadius: 2 }}>
-            <Text as="h3" sx={{ fontSize: 1, fontWeight: "bold", mb: 2, margin: 0 }}>
+          <Box sx={{ p: 2, bg: "var(--bg-secondary)", borderRadius: "var(--radius-md)" }}>
+            <Text as="h3" sx={{ fontSize: 1, fontWeight: "var(--font-weight-bold)", mb: 2, margin: 0, color: "var(--accent-primary)" }}>
               Academic Background
             </Text>
-            <Text as="p" sx={{ fontSize: 0, mb: 1, margin: 0 }}>
+            <Text as="p" sx={{ fontSize: 0, mb: 1, margin: 0, color: "var(--text-primary)" }}>
               <strong>ISCTE-IUL (Lisbon, Portugal)</strong>
             </Text>
-            <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
+            <Text as="p" sx={{ fontSize: 0, color: "var(--text-secondary)", margin: 0 }}>
               BSc in Computer Science and Business Administration
             </Text>
           </Box>
 
           {/* Certifications */}
-          <Box sx={{ p: 2, bg: "canvas.subtle", borderRadius: 2 }}>
-            <Text as="h3" sx={{ fontSize: 1, fontWeight: "bold", mb: 2, margin: 0 }}>
+          <Box sx={{ p: 2, bg: "var(--bg-secondary)", borderRadius: "var(--radius-md)" }}>
+            <Text as="h3" sx={{ fontSize: 1, fontWeight: "var(--font-weight-bold)", mb: 2, margin: 0, color: "var(--accent-primary)" }}>
               Professional Certifications
             </Text>
-            <Text as="p" sx={{ fontSize: 0, mb: 1, margin: 0 }}>
+            <Text as="p" sx={{ fontSize: 0, mb: 1, margin: 0, color: "var(--text-primary)" }}>
               ✓ AWS Certified Solutions Architect Associate (2019)
             </Text>
-            <Text as="p" sx={{ fontSize: 0, margin: 0 }}>
+            <Text as="p" sx={{ fontSize: 0, margin: 0, color: "var(--text-primary)" }}>
               ✓ MicroStrategy Certified Engineering Principal (2015)
             </Text>
           </Box>
@@ -280,24 +244,24 @@ function Home() {
       </Box>
 
       {/* Languages Section */}
-      <Box width="100%" textAlign="left" mb={4} sx={{ borderTop: "1px solid", borderColor: "border.default", pt: 4 }}>
-        <Text as="h2" sx={{ fontSize: 3, fontWeight: "bold", mb: 2 }}>
+      <Box width="100%" textAlign="left" mb={4} sx={{ borderTop: "1px solid", borderColor: "var(--border-primary)", pt: 4 }}>
+        <Text as="h2" sx={{ fontSize: 3, fontWeight: "var(--font-weight-bold)", mb: 2, color: "var(--accent-primary)" }}>
           Languages
         </Text>
         <Box sx={{ display: "flex", gap: 2 }}>
-          <Box sx={{ p: 2, bg: "canvas.subtle", borderRadius: 2, flex: 1 }}>
-            <Text as="p" sx={{ fontSize: 0, fontWeight: "bold", margin: 0 }}>
+          <Box sx={{ p: 2, bg: "var(--bg-secondary)", borderRadius: "var(--radius-md)", flex: 1 }}>
+            <Text as="p" sx={{ fontSize: 0, fontWeight: "var(--font-weight-bold)", margin: 0, color: "var(--accent-primary)" }}>
               English
             </Text>
-            <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
+            <Text as="p" sx={{ fontSize: 0, color: "var(--text-secondary)", margin: 0 }}>
               Fluent
             </Text>
           </Box>
-          <Box sx={{ p: 2, bg: "canvas.subtle", borderRadius: 2, flex: 1 }}>
-            <Text as="p" sx={{ fontSize: 0, fontWeight: "bold", margin: 0 }}>
+          <Box sx={{ p: 2, bg: "var(--bg-secondary)", borderRadius: "var(--radius-md)", flex: 1 }}>
+            <Text as="p" sx={{ fontSize: 0, fontWeight: "var(--font-weight-bold)", margin: 0, color: "var(--accent-primary)" }}>
               Portuguese
             </Text>
-            <Text as="p" sx={{ fontSize: 0, color: "text.secondary", margin: 0 }}>
+            <Text as="p" sx={{ fontSize: 0, color: "var(--text-secondary)", margin: 0 }}>
               Native
             </Text>
           </Box>
@@ -305,15 +269,16 @@ function Home() {
       </Box>
 
       {/* About Section */}
-      <Box width="100%" textAlign="left" sx={{ borderTop: "1px solid", borderColor: "border.default", pt: 4 }}>
-        <Text as="h2" sx={{ fontSize: 3, fontWeight: "bold", mb: 2 }}>
+      <Box width="100%" textAlign="left" sx={{ borderTop: "1px solid", borderColor: "var(--border-primary)", pt: 4 }}>
+        <Text as="h2" sx={{ fontSize: 3, fontWeight: "var(--font-weight-bold)", mb: 2, color: "var(--accent-primary)" }}>
           About This Site
         </Text>
-        <Text as="p" sx={{ lineHeight: 1.6 }}>
-          Welcome to my professional portfolio. This site serves as a comprehensive showcase of my career 
-          in Business Intelligence and Analytics. Explore my detailed CV, past work across multiple companies 
-          and industries, and technical expertise. I'm based in London, UK, but have worked across Europe 
-          and Africa. Feel free to connect via LinkedIn or GitHub!
+        <Text as="p" sx={{ lineHeight: "var(--line-height-relaxed)", color: "var(--text-primary)", fontFamily: "var(--font-family)" }}>
+          Welcome to CarlosDamasio.com!
+          This space is meant to be a static website coalescing some information about myself and created mostly for experimentation.
+          My linkedin and github accounts together with my cv are the main foundation for the content on this site with some extras to come.
+          At the moment I'm based in the UK, specifically in London.
+          Feel free to connect via LinkedIn or GitHub!
         </Text>
       </Box>
     </Box>
