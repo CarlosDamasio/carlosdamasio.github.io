@@ -1,8 +1,16 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import { MemoryRouter } from 'react-router-dom';
+import GlobalBar from './features/navs/GlobalBar';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders the global bar navigation without losing its title and actions', () => {
+  render(
+    <MemoryRouter>
+      <GlobalBar />
+    </MemoryRouter>
+  );
+
+  expect(screen.getByTestId('global-bar')).toBeInTheDocument();
+  expect(screen.getByTestId('global-bar-home-link')).toBeInTheDocument();
+  expect(screen.getByText('CarlosDamasio.com')).toBeInTheDocument();
+  expect(screen.getByTestId('global-bar-actions')).toBeInTheDocument();
 });

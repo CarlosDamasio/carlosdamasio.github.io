@@ -39,7 +39,7 @@
         "Developed custom FastAPI applications to support internal tooling and automation needs",
         "Established best practices for infrastructure as code, observability and Python development across engineering teams"
       ],
-      "technologies": ["Ansible", "AKS", "Azure", "Docker", "FastAPI", "Grafana", "GitHub Runners", "Kubernetes", "Linux", "Packer", "Prometheus", "Python", "Terraform", "Windows"]
+      "technologies": ["Ansible", "AKS", "ArgoCD", "Azure", "Docker", "FastAPI", "Grafana", "GitHub Runners", "Kubernetes", "Linux", "MCP", "Packer", "Prometheus", "Pydantic-ai", "Python", "Terraform", "Windows"]
     },
     {
       "company": "Sony Interactive Entertainment Europe",
@@ -89,7 +89,7 @@
         "Development of Vodafone Data Warehouse Group Solution - ETL development, tasks estimation, follow and validate work from junior developers",
         "Managing the Reporting Team at Movicel - Reports and Dashboards development, Servers and Tool administration, Analytics Platform road map specification, Development process specification, business users and developers training"
       ],
-      "technologies": ["Abinitio", "Microsoft Integration Services", "Microsoft Reporting Services", "Microsoft SQL Server", "Python", "SQL"]
+      "technologies": ["Abinitio", "IBM DataStage", "Microsoft Integration Services", "Microsoft Reporting Services", "MicroStrategy", "Microsoft SQL Server", "Oracle Exadata", "Python", "SQL"]
     }
   ],
   "skills": {
