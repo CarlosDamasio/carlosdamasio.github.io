@@ -39,7 +39,7 @@
         "Developed custom FastAPI applications to support internal tooling and automation needs",
         "Established best practices for infrastructure as code, observability and Python development across engineering teams"
       ],
-      "technologies": ["Ansible", "AKS", "ArgoCD", "Azure", "Docker", "FastAPI", "Grafana", "GitHub Runners", "Kubernetes", "Linux", "MCP", "Packer", "Prometheus", "Pydantic-ai", "Python", "Terraform", "Windows"]
+      "technologies": ["Ansible", "AKS", "ArgoCD", "Azure", "Docker", "FastAPI", "Grafana", "GitHub Runners", "Kubernetes", "Linux", "MCP", "Packer", "Prometheus", "Pydantic AI", "Python", "Terraform", "Windows"]
     },
     {
       "company": "Sony Interactive Entertainment Europe",
