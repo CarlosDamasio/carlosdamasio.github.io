@@ -45,8 +45,10 @@ const DynamicDrawer = () => {
           </Nav.Link>
         </NavList.Group>
           <NavList.Group title="Projects">
-        <NavItem to="CarlosDamasio">CarlosDamasio</NavItem>
-      </NavList.Group>
+          <Nav.Link onClick={handleClose}>
+            <NavItem to="CarlosDamasio">CarlosDamasio</NavItem>
+          </Nav.Link>
+        </NavList.Group>
       </NavList>
     </>
   );
